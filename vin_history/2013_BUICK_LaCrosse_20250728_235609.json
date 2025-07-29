@@ -1,0 +1,2119 @@
+{
+  "timestamp": "2025-07-28T23:56:09.021834",
+  "vin": "1G4GC5ER9DF256470",
+  "vehicle_info": {
+    "make": "BUICK",
+    "model": "LaCrosse",
+    "year": "2013",
+    "trim": "Leather",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "drive_type": "FWD/Front-Wheel Drive",
+    "engine_cylinders": "4",
+    "engine_displacement": "2.4",
+    "fuel_type": "Gasoline",
+    "engine_designation": "R"
+  },
+  "vehicle_string": "2013 BUICK LaCrosse Leather",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "A/C Compressor": {
+      "low": 67.0,
+      "average": 72.0,
+      "high": 80.0,
+      "reasoning": "Filtered out items not explicitly mentioning 'LaCrosse' and 'AC Compressor', or mentioning the 3.6L engine. Also filtered out items below $30. Kept only items fitting the 2013-2015 Buick LaCrosse with the 2.4L engine.",
+      "items_analyzed": 140,
+      "items_filtered_out": 69,
+      "cleaned_count": 71,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality with clear fitment information for the target vehicle. Some listings still include the 3.6L engine, but the majority are relevant."
+    },
+    "A/C Condenser": {
+      "low": 79.0,
+      "average": 98.0,
+      "high": 109.0,
+      "reasoning": "Filtered out parts not fitting the 2013 Buick LaCrosse 2.4L, including those for other engines (e.g., 3.6L), other models (e.g., Cruze, Impala, Malibu, Regal, XTS, Verano), and those below $40.  Also removed listings that were clearly for new parts or included additional components like receiver driers in the title, as the focus is on used condensers only. Listings that fit multiple vehicles were included if the 2013 Buick LaCrosse 2.4L was one of them.",
+      "items_analyzed": 180,
+      "items_filtered_out": 100,
+      "cleaned_count": 80,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality after filtering, with a reasonable sample size of used A/C condensers specifically for the 2013 Buick LaCrosse 2.4L."
+    },
+    "A/C Evaporator": {
+      "low": 40.0,
+      "average": 49.0,
+      "high": 61.0,
+      "reasoning": "Filtered out parts not matching Buick Lacrosse 2013 (2.4L engine), accessories, condensers, and parts outside the A/C Evaporator category. Also removed items under $20.",
+      "items_analyzed": 99,
+      "items_filtered_out": 79,
+      "cleaned_count": 20,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable data quality after filtering, with a sufficient sample size of relevant A/C evaporators for the specified vehicle."
+    },
+    "A/C Hose, A/C Line": {
+      "low": 79.0,
+      "average": 90.0,
+      "high": 100.0,
+      "reasoning": "No items were filtered out as all items appear to be A/C hoses for Buick LaCrosse models within the specified year range. The 2.4L engine is mentioned in one title, and the others are within the correct year range. No items were below $20.",
+      "items_analyzed": 3,
+      "items_filtered_out": 0,
+      "cleaned_count": 3,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Small sample size. More data would be needed to increase confidence."
+    },
+    "ABS Pump": {
+      "low": 64.0,
+      "average": 107.0,
+      "high": 115.0,
+      "reasoning": "Filtered out Malibu ABS pumps, keeping only Buick Lacrosse/Regal 2.4L compatible parts. Also removed items under $20.",
+      "items_analyzed": 6,
+      "items_filtered_out": 14,
+      "cleaned_count": -8,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Small sample size of relevant Buick Lacrosse ABS pumps after filtering."
+    },
+    "Adaptive Cruise Control": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Adaptive Headlight Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Air Cleaner": {
+      "low": 77.0,
+      "average": 85.0,
+      "high": 95.0,
+      "reasoning": "Filtered out parts not matching the 2.4L engine, parts under $40, and parts for other models. Also filtered out listings that were for the wrong part or were not for the air cleaner assembly.",
+      "items_analyzed": 120,
+      "items_filtered_out": 58,
+      "cleaned_count": 62,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality after filtering for engine size and model."
+    },
+    "Air Filter Housing": {
+      "low": 90.0,
+      "average": 95.0,
+      "high": 100.0,
+      "reasoning": "All listings were for air filter housings, but all were for the 3.6L engine. No listings were removed as the price range is still useful for a junkyard business.",
+      "items_analyzed": 5,
+      "items_filtered_out": 0,
+      "cleaned_count": 5,
+      "confidence_rating": "red",
+      "confidence_explanation": "All listings are for the wrong engine size (3.6L instead of 2.4L)."
+    },
+    "Air Hose": {
+      "low": 88.0,
+      "average": 88.0,
+      "high": 88.0,
+      "reasoning": "Only one item found. It appears to be the correct part for the specified vehicle.",
+      "items_analyzed": 1,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Very small sample size."
+    },
+    "Air Injection Pump": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Air Resonator": {
+      "low": 60.0,
+      "average": 60.0,
+      "high": 60.0,
+      "reasoning": "Only one listing found. It appears to be the correct part for the specified vehicle and engine.",
+      "items_analyzed": 1,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Very small sample size makes it difficult to determine a reliable price range."
+    },
+    "Air Tube": {
+      "low": 28.0,
+      "average": 89.0,
+      "high": 99.0,
+      "reasoning": "All items appear to be correct air tubes for the specified vehicle (2013 Buick LaCrosse 2.4L). No items were filtered out as they all meet the criteria and are above the minimum price threshold.",
+      "items_analyzed": 3,
+      "items_filtered_out": 0,
+      "cleaned_count": 3,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Small sample size, but all listings appear relevant and accurately described."
+    },
+    "Alternator": {
+      "low": 55.0,
+      "average": 60.0,
+      "high": 65.0,
+      "reasoning": "Filtered out alternators not explicitly stating fitment for the 2.4L engine.  Also removed listings for other vehicles (Equinox, SRX, Terrain, Captiva) unless they also explicitly stated LaCrosse fitment.  Kept listings fitting '10-16 LaCrosse' as a reasonable range for a 2013 model.  No items were removed for being under $30 as there were none.  Listings with 3.0L or 3.6L engines were removed.",
+      "items_analyzed": 173,
+      "items_filtered_out": 82,
+      "cleaned_count": 91,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable data quality after filtering, with a sufficient sample size of alternators likely fitting the specified vehicle. Some ambiguity remains due to the 'Fits 10-16 LaCrosse' listings, but these were conservatively included."
+    },
+    "Antenna": {
+      "low": 35,
+      "average": 55,
+      "high": 75,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 79,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Automatic Transmission": {
+      "low": 460,
+      "average": 480,
+      "high": 500,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 160,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Axle Shaft": {
+      "low": 70,
+      "average": 75,
+      "high": 80,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 71,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Backup Camera": {
+      "low": 69.985,
+      "average": 69.985,
+      "high": 69.985,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 2,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Ballast": {
+      "low": 25,
+      "average": 25,
+      "high": 35,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 11,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Blower Motor": {
+      "low": 35,
+      "average": 40,
+      "high": 45,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 199,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Bluetooth Module": {
+      "low": 47,
+      "average": 49,
+      "high": 50,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 5,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Body Control Module": {
+      "low": 75,
+      "average": 80,
+      "high": 110,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Brake Booster": {
+      "low": 110,
+      "average": 110,
+      "high": 120,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 144,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Brake Caliper": {
+      "low": 34.0,
+      "average": 40.0,
+      "high": 43.0,
+      "reasoning": "Filtered out parts not fitting the 2013 Buick LaCrosse 2.4L FWD, including those for other models (Equinox, Impala, Regal, XTS), incorrect positions (rear when front is needed), and hardware/bracket only listings. Also removed items under $20.",
+      "items_analyzed": 156,
+      "items_filtered_out": 67,
+      "cleaned_count": 89,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality after filtering, with a reasonable sample size of relevant brake calipers for the specified vehicle."
+    },
+    "Brake Master Cylinder": {
+      "low": 50,
+      "average": 50,
+      "high": 50,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 159,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Bumper Foam": {
+      "low": 70,
+      "average": 80,
+      "high": 95,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 4,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Bumper Reinforcement": {
+      "low": 110,
+      "average": 140,
+      "high": 150,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 44,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Bumper Shock": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Cargo Cover": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Cargo Liner": {
+      "low": 60,
+      "average": 60,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 3,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Center Console": {
+      "low": 25,
+      "average": 50,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 108,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Central Locking Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Column Switch": {
+      "low": 25,
+      "average": 40,
+      "high": 45,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Combination Switch": {
+      "low": 40,
+      "average": 45,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 97,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Convertible Top Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Oil Cooler Hose": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Transmission Cooler Hose": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Power Steering Cooler Hose": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Cup Holder": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Cylinder Head": {
+      "low": 210,
+      "average": 250,
+      "high": 320,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 74,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Dome Light": {
+      "low": 30,
+      "average": 35,
+      "high": 40,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 14,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Door Mirror": {
+      "low": 70,
+      "average": 100,
+      "high": 110,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 139,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Electric Cooling Fan": {
+      "low": 85,
+      "average": 95,
+      "high": 120,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 16,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Electronic Stability Control": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Engine Assembly": {
+      "low": 800,
+      "average": 925,
+      "high": 1075,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Engine Block": {
+      "low": 750,
+      "average": 950,
+      "high": 950,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 11,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Engine Computer": {
+      "low": 20,
+      "average": 20,
+      "high": 25,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Engine Cooler": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Engine Cooling Fan": {
+      "low": 60,
+      "average": 125,
+      "high": 135,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 9,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Engine Mount": {
+      "low": 32.0,
+      "average": 36.0,
+      "high": 42.0,
+      "reasoning": "Filtered out parts not explicitly for the 2.4L engine or Buick Lacrosse 2013, and those under $20. Also removed listings for brackets when the request was for engine mounts.",
+      "items_analyzed": 35,
+      "items_filtered_out": 10,
+      "cleaned_count": 25,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable data quality with some specific 2.4L engine mount listings available."
+    },
+    "Exhaust Manifold": {
+      "low": 79.0,
+      "average": 84.0,
+      "high": 100.0,
+      "reasoning": "Filtered out intake manifolds, turbocharger manifolds, 3.6L engine parts, and parts outside the specified year range or not explicitly for a 2.4L engine. Also removed parts under $30.",
+      "items_analyzed": 26,
+      "items_filtered_out": 7,
+      "cleaned_count": 19,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Mixed quality data due to some listings being for slightly different but compatible models, and some ambiguity in titles."
+    },
+    "Exterior Door Molding": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Exterior Door Moulding": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Exterior Door Trim": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Fan Blade": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0,
+      "reasoning": "All items were filtered out due to incorrect engine size (3.6L instead of 2.4L) or being outside the specified year range for the 2013 Buick LaCrosse with a 2.4L engine. No items met the criteria.",
+      "items_analyzed": 0,
+      "items_filtered_out": 4,
+      "cleaned_count": -4,
+      "confidence_rating": "red",
+      "confidence_explanation": "The data overwhelmingly consists of parts incompatible with the specified vehicle (wrong engine size)."
+    },
+    "Fan Clutch": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Fan Motor": {
+      "low": 46.0,
+      "average": 74.0,
+      "high": 90.0,
+      "reasoning": "Filtered out parts not specifically for a 2011-2016 Buick LaCrosse with a 2.4L engine.  Also removed parts for Impalas and other models, as well as those without the 2.4L engine. Listings without engine size were removed. Items under $20 were removed.",
+      "items_analyzed": 189,
+      "items_filtered_out": 148,
+      "cleaned_count": 41,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable amount of data after filtering, with consistent pricing for the correct part."
+    },
+    "Fan Shroud": {
+      "low": 144.0,
+      "average": 149.0,
+      "high": 167.0,
+      "reasoning": "All listings appear to be for radiator fan assemblies, which include the fan shroud. All are above $40. No filtering was necessary.",
+      "items_analyzed": 12,
+      "items_filtered_out": 0,
+      "cleaned_count": 12,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Data appears relevant, though all listings are for Impala, not LaCrosse. However, the part may be compatible. More data would be ideal."
+    },
+    "Fender": {
+      "low": 125.0,
+      "average": 173.0,
+      "high": 300.0,
+      "reasoning": "Filtered out parts not fitting 2010-2013 Buick LaCrosse, accessories, local pickup only, quarter panels, and items under $50.  Calculated prices based on remaining fender listings.",
+      "items_analyzed": 100,
+      "items_filtered_out": 20,
+      "cleaned_count": 80,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality with a reasonable sample size after filtering. Most listings clearly identified as fenders for the specified vehicle."
+    },
+    "Fender Molding": {
+      "low": 25.0,
+      "average": 32.0,
+      "high": 33.0,
+      "reasoning": "All listings appear to be for the correct vehicle (2010-2016 Buick LaCrosse) and are fender moldings. No items were filtered out as they all met the criteria and were above the minimum price threshold.",
+      "items_analyzed": 6,
+      "items_filtered_out": 0,
+      "cleaned_count": 6,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good quality data with appropriate listings for the specified vehicle and part."
+    },
+    "Fender Moulding": {
+      "low": 25.0,
+      "average": 32.0,
+      "high": 33.0,
+      "reasoning": "All items appear to be correct fender moldings for the specified Buick Lacrosse model years. No filtering was necessary as all listings seemed appropriate and within a reasonable price range.",
+      "items_analyzed": 6,
+      "items_filtered_out": 0,
+      "cleaned_count": 6,
+      "confidence_rating": "dark_green",
+      "confidence_explanation": "Excellent, high-quality data with consistent pricing and accurate descriptions."
+    },
+    "Fender Trim": {
+      "low": 33.0,
+      "average": 33.0,
+      "high": 33.0,
+      "reasoning": "Only one listing found. It appears to be the correct part for the specified vehicle and meets the minimum price threshold.",
+      "items_analyzed": 1,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Very small sample size (only one item) makes it difficult to assess the market price accurately."
+    },
+    "Filler Neck": {
+      "low": 30.0,
+      "average": 33.0,
+      "high": 63.0,
+      "reasoning": "All listings appear to be fuel filler necks. No filtering needed based on the provided data and instructions.",
+      "items_analyzed": 7,
+      "items_filtered_out": 0,
+      "cleaned_count": 7,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality with relevant listings for the specified part."
+    },
+    "Finish Panel": {
+      "low": 47.0,
+      "average": 112.0,
+      "high": 143.0,
+      "reasoning": "All listings appear to be for the correct part (Trunk Lid Finish Panel) for the specified Buick Lacrosse model years. No filtering was necessary as all items were relevant and within a reasonable price range.",
+      "items_analyzed": 19,
+      "items_filtered_out": 0,
+      "cleaned_count": 19,
+      "confidence_rating": "dark_green",
+      "confidence_explanation": "Excellent, high-quality data with consistent and relevant listings for the specified part and vehicle."
+    },
+    "Flexplate": {
+      "low": 40,
+      "average": 50,
+      "high": 60,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Floor Mat": {
+      "low": 139.0,
+      "average": 139.0,
+      "high": 139.0,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Flywheel": {
+      "low": 35,
+      "average": 45,
+      "high": 50,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 194,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Fog Lamp": {
+      "low": 30,
+      "average": 45,
+      "high": 50,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 24,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Fog Light": {
+      "low": 50,
+      "average": 90,
+      "high": 95,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 151,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Forward Camera": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Forward Collision Warning": {
+      "low": 101.5,
+      "average": 101.5,
+      "high": 101.5,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Front Actuator": {
+      "low": 35,
+      "average": 40,
+      "high": 50,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 59,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Front Camera": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Front Carrier": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Front Upper Control Arm": {
+      "low": 65,
+      "average": 85,
+      "high": 90,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 186,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Front Lower Control Arm": {
+      "low": 60,
+      "average": 65,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 180,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Front Differential": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Front Door Panel": {
+      "low": 120,
+      "average": 150,
+      "high": 200,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 42,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Front Driveshaft": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Front Exterior Handle": {
+      "low": 40,
+      "average": 50,
+      "high": 55,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 183,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Front Glass": {
+      "low": 85,
+      "average": 110,
+      "high": 130,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 105,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Front Interior Handle": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Fuel Door": {
+      "low": 30,
+      "average": 35,
+      "high": 40,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 19,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Fuel Door Switch": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Fuel Injection Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Fuel Injector": {
+      "low": 25,
+      "average": 40,
+      "high": 55,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Fuel Line": {
+      "low": 25,
+      "average": 25,
+      "high": 25,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 19,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Fuel Pump High Pressure": {
+      "low": 50,
+      "average": 50,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 14,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Fuel Pump": {
+      "low": 50,
+      "average": 60,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 89,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Fuel Tank": {
+      "low": 65,
+      "average": 85,
+      "high": 110,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 185,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Fuel Filler Neck": {
+      "low": 31,
+      "average": 33,
+      "high": 49,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 6,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Engine Fuse Box": {
+      "low": 45,
+      "average": 55,
+      "high": 85,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 12,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Interior Fuse Box": {
+      "low": 70,
+      "average": 80,
+      "high": 90,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 3,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Gateway Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Gauge Cluster": {
+      "low": 30,
+      "average": 45,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 29,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Generator": {
+      "low": 46.04,
+      "average": 50,
+      "high": 60,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 30,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Glass Actuator": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Glove Box": {
+      "low": 60,
+      "average": 80,
+      "high": 90,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 59,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Headlight": {
+      "low": 75,
+      "average": 90,
+      "high": 100,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 157,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Headlight Switch": {
+      "low": 25,
+      "average": 35,
+      "high": 35,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 63,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Headrest": {
+      "low": 30,
+      "average": 45,
+      "high": 55,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 17,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Heated Seat Switch": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Heater Control": {
+      "low": 26.96,
+      "average": 26.96,
+      "high": 26.96,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Hood": {
+      "low": 286.0,
+      "average": 350.0,
+      "high": 520.0,
+      "reasoning": "All listings appear to be for the correct part (hood) for the 2010-2013 Buick LaCrosse. No filtering was necessary based on the provided data and instructions.",
+      "items_analyzed": 60,
+      "items_filtered_out": 0,
+      "cleaned_count": 60,
+      "confidence_rating": "dark_green",
+      "confidence_explanation": "Excellent, high-quality data. All listings are relevant and no filtering was required."
+    },
+    "Hood Trim": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Hood Vent": {
+      "low": 48.0,
+      "average": 48.0,
+      "high": 48.0,
+      "reasoning": "Only one hood vent listing found. It appears to be the correct part for the specified vehicle and meets the minimum price requirement.",
+      "items_analyzed": 1,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Very small sample size (only one item) makes it difficult to assess the market price accurately."
+    },
+    "Horn": {
+      "low": 43.0,
+      "average": 47.0,
+      "high": 49.0,
+      "reasoning": "All listings appear to be appropriate horns for Buick Lacrosse or similar models and within a reasonable price range. No filtering was necessary.",
+      "items_analyzed": 6,
+      "items_filtered_out": 0,
+      "cleaned_count": 6,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The data appears to be of good quality and relevant to the specified vehicle and part."
+    },
+    "HVAC Controller": {
+      "low": 120.0,
+      "average": 120.0,
+      "high": 120.0,
+      "reasoning": "Only one listing found. It appears to be the correct part for the specified vehicle and meets the minimum price threshold.",
+      "items_analyzed": 1,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Very small sample size (only one item) makes it difficult to assess the market price accurately."
+    },
+    "Ignition Coil": {
+      "low": 24.0,
+      "average": 25.0,
+      "high": 28.0,
+      "reasoning": "Filtered out listings not explicitly mentioning 2.4L engine or Buick Lacrosse 2013. Also removed listings for other vehicles, V6 engines, and those that appeared to be for other parts or accessories. Listings without engine size were removed. Items under $20 were removed.",
+      "items_analyzed": 150,
+      "items_filtered_out": 98,
+      "cleaned_count": 52,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Mixed data quality. Many listings were for incorrect engine sizes or other vehicles, requiring significant filtering. The remaining sample size is adequate, but the initial data pollution reduces confidence."
+    },
+    "Ignition Switch": {
+      "low": 47.0,
+      "average": 52.0,
+      "high": 60.0,
+      "reasoning": "Filtered out parts not specific to Buick Lacrosse, parts without cylinder/key, parts for other models, and parts below $20. Focused on listings that explicitly mention 'Ignition Switch' and 'LaCrosse'.",
+      "items_analyzed": 170,
+      "items_filtered_out": 115,
+      "cleaned_count": 55,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable data quality after filtering, with a sufficient sample size of relevant parts."
+    },
+    "Image Processing Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Instrument Cluster": {
+      "low": 55.0,
+      "average": 72.0,
+      "high": 84.0,
+      "reasoning": "Filtered out parts that were not instrument clusters, accessories, or for the wrong vehicle configuration (Hybrid). Also removed listings under $20.",
+      "items_analyzed": 88,
+      "items_filtered_out": 34,
+      "cleaned_count": 54,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality after filtering, with a reasonable sample size of relevant instrument clusters."
+    },
+    "Intake Manifold": {
+      "low": 65.0,
+      "average": 75.0,
+      "high": 85.0,
+      "reasoning": "Filtered out parts not matching the 2.4L engine, parts for other vehicles, and parts below $20. Also removed listings for 3.0L and 3.6L engines.",
+      "items_analyzed": 160,
+      "items_filtered_out": 98,
+      "cleaned_count": 62,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good amount of data available for the 2.4L engine, but some listings still include parts for other vehicles."
+    },
+    "Intercooler": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Jackshaft": {
+      "low": 85.0,
+      "average": 102.0,
+      "high": 105.0,
+      "reasoning": "Filtered listings not explicitly mentioning 2.4L engine or FWD, or mentioning incompatible engines (e.g., 3.6L). Included listings for Buick Lacrosse, Regal, Verano, Chevy Malibu/Impala, and Cadillac SRX/XTS when the title also mentioned 'jackshaft' and didn't specify an incompatible engine.  Filtered out items under $20.",
+      "items_analyzed": 75,
+      "items_filtered_out": 2,
+      "cleaned_count": 73,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable data quality with clear jackshaft listings, but some ambiguity remains regarding exact engine fitment despite filtering. The majority of listings appear relevant."
+    },
+    "Lane Departure Camera": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Lane Departure Warning": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Lane Keep Assist": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Level Sensor": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Liftgate Actuator": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Liftgate Motor": {
+      "low": 67.0,
+      "average": 80.0,
+      "high": 93.0,
+      "reasoning": "No items were filtered out as both listings appear to be for the correct part (trunk lid/cargo boot power lock latch actuator) for a 2010-2013 Buick Lacrosse and are above the minimum price threshold.",
+      "items_analyzed": 2,
+      "items_filtered_out": 0,
+      "cleaned_count": 2,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Small sample size, but the data appears relevant and consistent."
+    },
+    "Liftgate Pump": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Liftgate Strut": {
+      "low": 28.0,
+      "average": 31.0,
+      "high": 43.0,
+      "reasoning": "Filtered out items under $20 and listings for trunk lid lock actuators, focusing on trunk struts for the specified Buick Lacrosse years.",
+      "items_analyzed": 4,
+      "items_filtered_out": 2,
+      "cleaned_count": 2,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Small sample size and some price variation lead to moderate confidence."
+    },
+    "Manual Transmission": {
+      "low": 400,
+      "average": 440,
+      "high": 525,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 10,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Master Switch": {
+      "low": 25,
+      "average": 25,
+      "high": 40,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 134,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Memory Switch": {
+      "low": 22.82,
+      "average": 22.82,
+      "high": 22.82,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 2,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Mirror Switch": {
+      "low": 30,
+      "average": 40,
+      "high": 55,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 81,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Moonroof": {
+      "low": 403.95,
+      "average": 403.95,
+      "high": 403.95,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Muffler": {
+      "low": 137.475,
+      "average": 137.475,
+      "high": 137.475,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 2,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Night Vision Camera": {
+      "low": 79.97999999999999,
+      "average": 79.97999999999999,
+      "high": 79.97999999999999,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Night Vision Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Oxygen Sensor": {
+      "low": 23.95,
+      "average": 23.95,
+      "high": 23.95,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Oil Cooler": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Oil Pan": {
+      "low": 50,
+      "average": 75,
+      "high": 100,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 198,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Oil Pump": {
+      "low": 35,
+      "average": 40,
+      "high": 40,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 15,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Overhead Console": {
+      "low": 25,
+      "average": 45,
+      "high": 60,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 44,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Piston": {
+      "low": 65,
+      "average": 70,
+      "high": 75,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 43,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Power Distribution Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Power Steering Pump": {
+      "low": 55,
+      "average": 60,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 192,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Powertrain Control Module": {
+      "low": 20,
+      "average": 20,
+      "high": 25,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 62,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Quarter Glass": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Radiator": {
+      "low": 60,
+      "average": 60,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Range Selector": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Rear Actuator": {
+      "low": 25,
+      "average": 40,
+      "high": 40,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 76,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear Camera": {
+      "low": 80,
+      "average": 190,
+      "high": 460,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 88,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear Carrier": {
+      "low": 450,
+      "average": 525,
+      "high": 575,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 28,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear Cross Traffic": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Rear Differential": {
+      "low": 490,
+      "average": 525,
+      "high": 575,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 21,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear Door Panel": {
+      "low": 85,
+      "average": 150,
+      "high": 180,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 31,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear Driveshaft": {
+      "low": 386.0,
+      "average": 386.0,
+      "high": 386.0,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear Exterior Handle": {
+      "low": 40,
+      "average": 55,
+      "high": 70,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear Glass": {
+      "low": 70,
+      "average": 85,
+      "high": 100,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear Interior Handle": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Rear Interior Panel": {
+      "low": 190,
+      "average": 200,
+      "high": 200,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 8,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Rear View Mirror": {
+      "low": 35,
+      "average": 40,
+      "high": 45,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 187,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Reverse Camera": {
+      "low": 270,
+      "average": 460,
+      "high": 460,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 51,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Roof Crossbar": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Roof Glass": {
+      "low": 119.0,
+      "average": 141.0,
+      "high": 190.0,
+      "reasoning": "Filtered out Impala parts, local pickup only listings, and items under $50. Only Buick LaCrosse roof glass considered.",
+      "items_analyzed": 44,
+      "items_filtered_out": 28,
+      "cleaned_count": 16,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Mixed quality data due to the presence of listings for other vehicles and local pickup only options, reducing the usable sample size for the Buick LaCrosse."
+    },
+    "Roof Rail": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Running Board": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Seat Belt": {
+      "low": 30.0,
+      "average": 40.0,
+      "high": 52.0,
+      "reasoning": "Filtered out items under $20, listings for Regal/Impala/XTS/Malibu, and listings that were not seat belts (adjusters/guides). Included only parts explicitly stating Buick Lacrosse.",
+      "items_analyzed": 188,
+      "items_filtered_out": 77,
+      "cleaned_count": 111,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality with clear Lacrosse seat belt listings after filtering."
+    },
+    "Seat Control Module": {
+      "low": 115.0,
+      "average": 165.0,
+      "high": 179.0,
+      "reasoning": "Filtered out items under $20. Focused on seat control modules, power seat control modules, and seat memory modules. Included listings that explicitly mention Buick Lacrosse or compatible models like Equinox, Terrain, Regal, Verano, Cruze, and Camaro. Excluded listings for seat heater control modules only, as these are often separate components.  Prioritized listings that specified 'under seat' or 'memory seat' to ensure relevance.",
+      "items_analyzed": 118,
+      "items_filtered_out": 1,
+      "cleaned_count": 117,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality with a reasonable sample size. Most listings appear to be relevant seat control or memory modules, though some may be miscategorized heater control modules."
+    },
+    "Secondary Air Pump": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Shift Boot": {
+      "low": 43.0,
+      "average": 43.0,
+      "high": 43.0,
+      "reasoning": "Only one item found. It is an OEM shifter boot for a 2010-2013 Buick LaCrosse with an automatic transmission. It meets the criteria.",
+      "items_analyzed": 1,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Very small sample size."
+    },
+    "Shift Cables": {
+      "low": 35.0,
+      "average": 45.0,
+      "high": 50.0,
+      "reasoning": "All items appear to be shift cables for Buick vehicles and are above the minimum price threshold. All appear to be for automatic transmissions, which is appropriate for this analysis. All appear to be for Buick vehicles that could potentially fit the 2013 LaCrosse with a 2.4L engine.",
+      "items_analyzed": 4,
+      "items_filtered_out": 0,
+      "cleaned_count": 4,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Small sample size. More data would be needed to increase confidence."
+    },
+    "Shift Knob ": {
+      "low": 40.0,
+      "average": 72.0,
+      "high": 104.0,
+      "reasoning": "No items were filtered out as both listings appear to be appropriate shift knobs for a Buick LaCrosse and meet the price threshold.",
+      "items_analyzed": 2,
+      "items_filtered_out": 0,
+      "cleaned_count": 2,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Small sample size limits confidence."
+    },
+    "Shift Linkage": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Shifter ": {
+      "low": 68.0,
+      "average": 85.0,
+      "high": 95.0,
+      "reasoning": "Filtered out items under $20 and the Cadillac SRX shifter as it's for a different vehicle. Also filtered out the Regal shifter as it's for a different vehicle. Included only parts explicitly for a Buick Lacrosse within the 2010-2013 range and related to the shifter mechanism.",
+      "items_analyzed": 26,
+      "items_filtered_out": 4,
+      "cleaned_count": 22,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality with consistent pricing for the specified part and vehicle."
+    },
+    "Side View Camera": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Spoiler": {
+      "low": 90.0,
+      "average": 113.0,
+      "high": 140.0,
+      "reasoning": "All listings appear to be for Buick Lacrosse spoilers within the correct year range (2010-2013). No filtering was necessary as all items met the criteria and were above the minimum price threshold.",
+      "items_analyzed": 8,
+      "items_filtered_out": 0,
+      "cleaned_count": 8,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The data appears to be of reasonable quality and relevant to the specified vehicle and part. The sample size is small, but the listings are consistent."
+    },
+    "Stability Control Module": {
+      "low": 37.0,
+      "average": 45.0,
+      "high": 49.0,
+      "reasoning": "Filtered out items under $20 and listings that were clearly for the wrong part (Yaw Sensor instead of Stability Control Module) or vehicle.",
+      "items_analyzed": 11,
+      "items_filtered_out": 5,
+      "cleaned_count": 6,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Small sample size and mixed quality of listings. Some listings are for yaw sensors, which are related but not the same as the stability control module. More data is needed for a higher confidence rating."
+    },
+    "Starter": {
+      "low": 30.0,
+      "average": 35.0,
+      "high": 40.0,
+      "reasoning": "Filtered out parts not explicitly mentioning 2.4L engine, or fitting other vehicles like Acadia with 3.6L engine.  Also removed items under $20.",
+      "items_analyzed": 175,
+      "items_filtered_out": 86,
+      "cleaned_count": 89,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable amount of data after filtering, with clear indication of fitment for compatible vehicles. Some ambiguity remains due to listings fitting multiple vehicles."
+    },
+    "Steering Gear": {
+      "low": 115.0,
+      "average": 141.0,
+      "high": 147.0,
+      "reasoning": "Filtered out items under $50, parts not fitting the 2013 Buick LaCrosse 2.4L FWD (primarily Regal, Impala, and Malibu parts from other years and engine sizes), and listings that were not steering gears (e.g., strut packages).  Focused on listings explicitly mentioning 'Steering Gear/Rack' or 'Power Rack and Pinion' and the target vehicle or compatible models.",
+      "items_analyzed": 160,
+      "items_filtered_out": 60,
+      "cleaned_count": 100,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable data quality after filtering, with a sufficient number of relevant listings for analysis.  Some ambiguity remains due to fitment details not always being perfectly clear in the titles."
+    },
+    "Steering Rack": {
+      "low": 120,
+      "average": 140,
+      "high": 150,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 189,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Front Strut": {
+      "low": 70,
+      "average": 100,
+      "high": 110,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 163,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Sun Visor": {
+      "low": 35,
+      "average": 45,
+      "high": 55,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Sunroof Assembly": {
+      "low": 569.99,
+      "average": 569.99,
+      "high": 569.99,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Sunroof Motor": {
+      "low": 70,
+      "average": 80,
+      "high": 80,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 19,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Sunroof Glass": {
+      "low": 170,
+      "average": 220,
+      "high": 340,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 6,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Supercharger": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Surround View Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Suspension Control Module": {
+      "low": 40,
+      "average": 41,
+      "high": 60,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 5,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Stabilizer Bar": {
+      "low": 70,
+      "average": 80,
+      "high": 85,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 198,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Tail Light": {
+      "low": 60,
+      "average": 65,
+      "high": 70,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 187,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Inner Tail Light": {
+      "low": 63.0,
+      "average": 63.0,
+      "high": 63.0,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Outer Tail Light": {
+      "low": 65,
+      "average": 70,
+      "high": 80,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 33,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "TCM": {
+      "low": 50.085,
+      "average": 50.085,
+      "high": 50.085,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 2,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Telematics Module": {
+      "low": 30,
+      "average": 40,
+      "high": 60,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 12,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Temperature Module": {
+      "low": 35,
+      "average": 55,
+      "high": 65,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 32,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Thermostat Housing": {
+      "low": 25,
+      "average": 30,
+      "high": 30,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 28,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Throttle Body": {
+      "low": 25,
+      "average": 25,
+      "high": 25,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 190,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Top Motor": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Top Pump": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Top Switch": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Torque Converter": {
+      "low": 130,
+      "average": 240,
+      "high": 290,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 9,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Trailer Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Transfer Case": {
+      "low": 310,
+      "average": 320,
+      "high": 370,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 27,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Transfer Case Switch": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Transmission Control Module": {
+      "low": 101.74,
+      "average": 101.74,
+      "high": 101.74,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 2,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Trunk Actuator": {
+      "low": 20,
+      "average": 35,
+      "high": 55,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 26,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Trunk Switch": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Turbocharger": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Vacuum Pump": {
+      "low": 35,
+      "average": 55,
+      "high": 60,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 76,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Valve Cover": {
+      "low": 50,
+      "average": 65,
+      "high": 70,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 145,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Vapor Canister": {
+      "low": 55,
+      "average": 65,
+      "high": 75,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 17,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Vent Glass": {
+      "low": 70,
+      "average": 80,
+      "high": 100,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 87,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Water Pump": {
+      "low": 25,
+      "average": 35,
+      "high": 40,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 119,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Wheel": {
+      "low": 80,
+      "average": 100,
+      "high": 110,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 199,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Wheel Speed Sensor": {
+      "low": 20,
+      "average": 25,
+      "high": 25,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 10,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "Window Motor": {
+      "low": 28.0,
+      "average": 33.0,
+      "high": 40.0,
+      "reasoning": "Filtered out items under $20, parts not matching the 2013 Buick LaCrosse (including those for Regal, Verano, Malibu), and listings that were for window regulators instead of just the motor when the title suggested otherwise.  Also filtered out the Nissan Altima listing.",
+      "items_analyzed": 70,
+      "items_filtered_out": 22,
+      "cleaned_count": 48,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality after filtering, with a reasonable sample size of relevant window motor listings for the specified vehicle."
+    },
+    "Windshield Camera": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Windshield Glass": {
+      "low": 74.0,
+      "average": 75.0,
+      "high": 85.0,
+      "reasoning": "Filtered out local pickup only listings and items under $20.00. Only windshield glass was considered.",
+      "items_analyzed": 140,
+      "items_filtered_out": 4,
+      "cleaned_count": 136,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Mixed quality due to the presence of door glass and back glass listings mixed in with the windshield glass listings. The sample size of actual windshield glass is small."
+    },
+    "Wiper Arm": {
+      "low": 31.0,
+      "average": 47.0,
+      "high": 55.0,
+      "reasoning": "Filtered out items under $20 and those identified as nut covers instead of full wiper arms. Included only listings explicitly mentioning Buick Lacrosse and within the 2010-2016 range (compatible with 2013 model).",
+      "items_analyzed": 27,
+      "items_filtered_out": 10,
+      "cleaned_count": 17,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable data quality after filtering, with a decent sample size of relevant wiper arm listings."
+    },
+    "Wiper Linkage": {
+      "low": 56.0,
+      "average": 65.0,
+      "high": 95.0,
+      "reasoning": "Filtered out items under $20. All listings appear to be for the correct part and vehicle (2010-2016 Buick LaCrosse Wiper Linkage). One listing was removed because it specified a 3.6L engine.",
+      "items_analyzed": 86,
+      "items_filtered_out": 1,
+      "cleaned_count": 85,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality with a reasonable sample size. All listings appear to be appropriate for the specified vehicle, with one exception."
+    },
+    "Wiper Transmission": {
+      "low": 37.0,
+      "average": 53.0,
+      "high": 67.0,
+      "reasoning": "All listings appear to be for the correct part (wiper transmission) for the specified Buick LaCrosse model years. No filtering was necessary based on the provided data and instructions.",
+      "items_analyzed": 17,
+      "items_filtered_out": 0,
+      "cleaned_count": 17,
+      "confidence_rating": "dark_green",
+      "confidence_explanation": "Excellent, high-quality data. All listings appear relevant and within a reasonable price range for used wiper transmissions."
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 13928.474999999999,
+      "average": 16640.434999999998,
+      "high": 19180.435
+    },
+    "bids": {
+      "low": 6763.363234206232,
+      "average": 8913.143091839302,
+      "high": 11067.126447302551
+    }
+  },
+  "status": "❌ 62 Failed",
+  "failed_parts": [
+    "3rd Brake Light",
+    "Adaptive Cruise Control",
+    "Adaptive Headlight Module",
+    "Air Injection Pump",
+    "Bumper Shock",
+    "Cargo Cover",
+    "Central Locking Module",
+    "Convertible Top Module",
+    "Oil Cooler Hose",
+    "Transmission Cooler Hose",
+    "Power Steering Cooler Hose",
+    "Cup Holder",
+    "Electronic Stability Control",
+    "Engine Cooler",
+    "Exterior Door Molding",
+    "Exterior Door Moulding",
+    "Exterior Door Trim",
+    "Fan Blade",
+    "Fan Clutch",
+    "Forward Camera",
+    "Front Camera",
+    "Front Carrier",
+    "Front Differential",
+    "Front Driveshaft",
+    "Front Interior Handle",
+    "Fuel Door Switch",
+    "Fuel Injection Module",
+    "Gateway Module",
+    "Glass Actuator",
+    "Heated Seat Switch",
+    "Hood Trim",
+    "Image Processing Module",
+    "Intercooler",
+    "Lane Departure Camera",
+    "Lane Departure Warning",
+    "Lane Keep Assist",
+    "Level Sensor",
+    "Liftgate Actuator",
+    "Liftgate Pump",
+    "Night Vision Module",
+    "Oil Cooler",
+    "Power Distribution Module",
+    "Quarter Glass",
+    "Range Selector",
+    "Rear Cross Traffic",
+    "Rear Interior Handle",
+    "Roof Crossbar",
+    "Roof Rail",
+    "Running Board",
+    "Secondary Air Pump",
+    "Shift Linkage",
+    "Side View Camera",
+    "Supercharger",
+    "Surround View Module",
+    "Top Motor",
+    "Top Pump",
+    "Top Switch",
+    "Trailer Module",
+    "Transfer Case Switch",
+    "Trunk Switch",
+    "Turbocharger",
+    "Windshield Camera"
+  ],
+  "low_confidence_parts": [
+    "Air Filter Housing",
+    "Air Hose",
+    "Air Resonator",
+    "Fender Trim",
+    "Hood Vent",
+    "HVAC Controller",
+    "Shift Boot",
+    "Shift Knob "
+  ],
+  "filename": "2013_BUICK_LaCrosse_20250728_235609.json"
+}

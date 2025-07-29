@@ -1,0 +1,5 @@
+This vehicle has both turbo and non-turbo engine variants. Turbo engines cost significantly more - filter out non-turbo engines when analyzing turbo engine prices.
+
+When analyzing engine prices, look for terms like "turbo", "turbocharged", "forced induction" in the listings. Exclude any engines that mention "naturally aspirated" or "non-turbo".
+
+For alternators and starters, turbo engines often have different electrical requirements and mounting positions, so prioritize parts specifically listed for turbo variants.

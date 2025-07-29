@@ -1,0 +1,3 @@
+Focus on standard used parts appropriate for junkyard pricing. Exclude new, remanufactured, or premium aftermarket parts that would not typically be found in a junkyard setting.
+
+When analyzing prices, prioritize parts that are clearly used/salvage and exclude any listings that mention "new", "rebuilt", "remanufactured", or "aftermarket performance".

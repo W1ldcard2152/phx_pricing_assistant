@@ -1,0 +1,7 @@
+This is a luxury vehicle with premium components that are often more expensive than standard versions.
+
+For headlights: This model has adaptive/LED/HID versions that cost 3x more than standard halogen. Focus on halogen versions for junkyard pricing unless specifically analyzing premium lighting.
+
+For brake components: Look for performance or Brembo brake components on sport/luxury trims. Standard calipers are much cheaper and more appropriate for junkyard analysis.
+
+Exclude any parts labeled as "OEM", "genuine", or "factory original" as these are typically priced for retail market, not junkyard pricing.

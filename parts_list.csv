@@ -1,0 +1,20 @@
+search_query,category_id,min_price
+engine,33615,300
+transmission,171115,300
+rear carrier,262245,75
+steering rack,33589,50
+headlight,33710,60
+front door panel,33696,50
+rear door panel,33696,50
+abs pump,262085,30
+alternator,177697,30
+body control module,33596,20
+brake caliper,33563,30
+cluster,33675,30
+heater control,33545,30
+compressor,33543,30
+door mirror,262160,30
+engine computer,33596,15
+front strut,33590,45
+steering wheel,33704,30
+wheel,179679,50

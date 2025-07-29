@@ -1,0 +1,217 @@
+search_query,category_id,min_price
+3rd Brake Light,262205,20
+A/C Compressor,33543,30
+A/C Condenser,61864,40
+A/C Evaporator,33547,20
+"A/C Hose, A/C Line",33544,20
+ABS Pump,262085,20
+Adaptive Cruise Control,38728,20
+Adaptive Headlight Module,6030,20
+Air Cleaner,43946,40
+Air Filter Housing,43946,40
+Air Hose,173950,20
+Air Injection Pump,33549,20
+Air Resonator,33549,20
+Air Tube,173950,20
+Alternator,177697,30
+Antenna,33639,20
+Automatic Transmission,171115,300
+Axle Shaft,262243,20
+Backup Camera,6030,20
+Ballast,262207,20
+Blower Motor,262077,20
+Bluetooth Module,33596,20
+Body Control Module,33596,20
+Brake Booster,174021,20
+Brake Caliper,33563,20
+Brake Master Cylinder,33566,20
+Bumper Foam,33640,40
+Bumper Reinforcement,33640,50
+Bumper Shock,33640,20
+Cargo Cover,174084,20
+Cargo Liner,33697,20
+Center Console,262187,20
+Central Locking Module,33596,20
+Column Switch,50459,20
+Combination Switch,50459,20
+Convertible Top Module,33596,20
+Oil Cooler Hose,33599,20
+Transmission Cooler Hose,33599,20
+Power Steering Cooler Hose,33599,20
+Cup Holder,262202,20
+Cylinder Head,33617,200
+Dome Light,33712,20
+Door Mirror,262161,20
+Electric Cooling Fan,33600,30
+Electronic Stability Control,33596,20
+Engine Assembly,33615,300
+Engine Block,33615,200
+Engine Computer,33596,20
+Engine Cooler,46095,20
+Engine Cooling Fan,33600,20
+Engine Mount,50454,20
+Exhaust Manifold,33632,30
+Exterior Door Molding,33654,20
+Exterior Door Moulding,33654,20
+Exterior Door Trim,33654,20
+Fan Blade,33600,40
+Fan Clutch,33600,20
+Fan Motor,33600,20
+Fan Shroud,33600,40
+Fender,33644,50
+Fender Molding,33654,20
+Fender Moulding,33654,20
+Fender Trim,33654,20
+Filler Neck,33556,20
+Finish Panel,33637,20
+Flexplate,33732,30
+Floor Mat,33697,60
+Flywheel,33732,20
+Fog Lamp,33709,20
+Fog Light,33709,20
+Forward Camera,6030,20
+Forward Collision Warning,6030,20
+Front Actuator,33648,20
+Front Camera,6030,20
+Front Carrier,262245,80
+Front Upper Control Arm,33580,20
+Front Lower Control Arm,33580,20
+Front Differential,262245,80
+Front Door Panel,33696,50
+Front Driveshaft,262251,40
+Front Exterior Handle,179851,20
+Front Glass,33684,50
+Front Interior Handle,179851,20
+Fuel Door,262167,20
+Fuel Door Switch,50459,20
+Fuel Injection Module,33596,20
+Fuel Injector,33554,20
+Fuel Line,173950,20
+Fuel Pump High Pressure,262071,20
+Fuel Pump,33555,20
+Fuel Tank,33556,50
+Fuel Filler Neck,33556,20
+Engine Fuse Box,262221,20
+Interior Fuse Box,262221,20
+Gateway Module,33596,20
+Gauge Cluster,33675,20
+Generator,177697,20
+Glass Actuator,33648,20
+Glove Box,33698,40
+Headlight,33710,20
+Headlight Switch,50459,20
+Headrest,262200,20
+Heated Seat Switch,50459,20
+Heater Control,33545,20
+Hood,33646,100
+Hood Trim,262155,20
+Hood Vent,262157,20
+Horn,262159,20
+HVAC Controller,33545,20
+Ignition Coil,262183,20
+Ignition Switch,50459,20
+Image Processing Module,33596,20
+Instrument Cluster,33675,20
+Intake Manifold,36474,20
+Intercooler,262073,30
+Jackshaft,262238,20
+Lane Departure Camera,6030,20
+Lane Departure Warning,33596,20
+Lane Keep Assist,33596,20
+Level Sensor,33579,20
+Liftgate Actuator,33648,20
+Liftgate Motor,262147,20
+Liftgate Pump,262147,20
+Liftgate Strut,262147,20
+Manual Transmission,171117,200
+Master Switch,50459,20
+Memory Switch,50459,20
+Mirror Switch,50459,20
+Moonroof,33684,20
+Muffler,33636,50
+Night Vision Camera,6030,20
+Night Vision Module,33596,20
+Oxygen Sensor,33557,20
+Oil Cooler,33599,20
+Oil Pan,38657,20
+Oil Pump,6778,20
+Overhead Console,262187,20
+Piston,33623,20
+Power Distribution Module,33596,20
+Power Steering Pump,33588,20
+Powertrain Control Module,33596,20
+Quarter Glass,33684,20
+Radiator,33602,60
+Range Selector,50459,20
+Rear Actuator,33648,20
+Rear Camera,6030,20
+Rear Carrier,262245,20
+Rear Cross Traffic,33596,20
+Rear Differential,262245,20
+Rear Door Panel,33696,50
+Rear Driveshaft,262251,20
+Rear Exterior Handle,179851,20
+Rear Glass,33684,50
+Rear Interior Handle,179851,20
+Rear Interior Panel,33696,20
+Rear View Mirror,33699,20
+Reverse Camera,6030,20
+Roof Crossbar,262215,20
+Roof Glass,33684,50
+Roof Rail,262215,50
+Running Board,33650,50
+Seat Belt,33725,20
+Seat Control Module,33596,20
+Secondary Air Pump,33610,20
+Shift Boot,33694,20
+Shift Cables,33736,20
+Shift Knob ,174077,20
+Shift Linkage,33736,20
+Shifter ,33736,20
+Side View Camera,6030,20
+Spoiler,33638,50
+Stability Control Module,33596,20
+Starter,177699,20
+Steering Gear,33589,50
+Steering Rack,33589,50
+Front Strut,33590,50
+Sun Visor,46102,20
+Sunroof Assembly,262172,100
+Sunroof Motor,262172,20
+Sunroof Glass,33684,50
+Supercharger,33741,100
+Surround View Module,33596,20
+Suspension Control Module,33596,20
+Stabilizer Bar,33592,50
+Tail Light,33716,20
+Inner Tail Light,33716,20
+Outer Tail Light,33716,20
+TCM,33596,20
+Telematics Module,33596,20
+Temperature Module,33596,20
+Thermostat Housing,33603,20
+Throttle Body,33558,20
+Top Motor,262170,20
+Top Pump,262170,20
+Top Switch,50459,20
+Torque Converter,63692,80
+Trailer Module,33596,20
+Transfer Case,262256,100
+Transfer Case Switch,50459,20
+Transmission Control Module,33596,20
+Trunk Actuator,33648,20
+Trunk Switch,50459,20
+Turbocharger,33742,100
+Vacuum Pump,33626,20
+Valve Cover,33627,20
+Vapor Canister,261899,20
+Vent Glass,33684,20
+Water Pump,33604,20
+Wheel,179679,60
+Wheel Speed Sensor,262086,20
+Window Motor,33706,20
+Windshield Camera,6030,20
+Windshield Glass,33684,20
+Wiper Arm,174113,20
+Wiper Linkage,61941,20
+Wiper Transmission,61941,20

@@ -1,0 +1,187 @@
+{
+  "timestamp": "2025-07-28T23:14:34.467127",
+  "vin": "1G4GC5ER9DF256470",
+  "vehicle_info": {
+    "make": "BUICK",
+    "model": "LaCrosse",
+    "year": "2013",
+    "trim": "Leather",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "drive_type": "FWD/Front-Wheel Drive",
+    "engine_cylinders": "4",
+    "engine_displacement": "2.4",
+    "fuel_type": "Gasoline",
+    "engine_designation": "R"
+  },
+  "vehicle_string": "2013 BUICK LaCrosse Leather",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "A/C Compressor": {
+      "low": 67.0,
+      "average": 72.0,
+      "high": 79.0,
+      "reasoning": "Filtered out items not explicitly listing 'LaCrosse' and 'A/C Compressor' in the title, items with shipping costs over $25, and the one listing for a 1992 Ford Mustang. Also removed listings that specified 3.6L engine, as the target vehicle has a 2.4L engine. Removed items under $30.",
+      "items_analyzed": 150,
+      "items_filtered_out": 15,
+      "cleaned_count": 135,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Mixed quality due to some listings potentially fitting other LaCrosse models or engine sizes, despite efforts to filter. Some Impala listings may be compatible, but are excluded for higher accuracy."
+    },
+    "A/C Condenser": {
+      "low": 77.0,
+      "average": 98.0,
+      "high": 109.0,
+      "reasoning": "Filtered out parts not fitting the 2013 Buick LaCrosse 2.4L FWD, including those for other models (Cruze, Impala, Verano, Regal, Malibu, XTS), and those with shipping costs. Also removed listings below $40. Focused on listings explicitly mentioning Buick Lacrosse and A/C Condenser.",
+      "items_analyzed": 194,
+      "items_filtered_out": 124,
+      "cleaned_count": 70,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable amount of data after filtering, with a clear focus on the target vehicle and part. Some ambiguity remains due to fitment details within the Lacrosse range, but the core data appears relevant."
+    },
+    "A/C Evaporator": {
+      "low": 40.0,
+      "average": 46.0,
+      "high": 54.0,
+      "reasoning": "Filtered out parts not matching 'A/C Evaporator' and vehicle (2013 Buick LaCrosse 2.4L FWD). Removed condensers, heater cores, and other unrelated parts.  Focused on evaporator cores and related components.  Excluded items under $20.",
+      "items_analyzed": 106,
+      "items_filtered_out": 79,
+      "cleaned_count": 27,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Reasonable data quality after filtering, with a sufficient sample size of relevant parts."
+    },
+    "A/C Hose, A/C Line": {
+      "low": 79.0,
+      "average": 89.0,
+      "high": 100.0,
+      "reasoning": "No items were filtered out as all listings appear to be for the correct vehicle and part type, and are above the minimum price threshold.",
+      "items_analyzed": 3,
+      "items_filtered_out": 0,
+      "cleaned_count": 3,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Small sample size, but the data appears relevant and consistent."
+    },
+    "ABS Pump": {
+      "low": 64.0,
+      "average": 107.0,
+      "high": 115.0,
+      "reasoning": "Filtered out items under $20. Focused on Buick Lacrosse and compatible models like Buick Regal and Chevy Malibu ABS pumps. Excluded listings that were not ABS pumps or for incompatible vehicles.",
+      "items_analyzed": 20,
+      "items_filtered_out": 1,
+      "cleaned_count": 19,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Mixed quality data due to some listings being for compatible but not exact models, and some ambiguity in part numbers. Sample size is also relatively small."
+    },
+    "Adaptive Cruise Control": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Adaptive Headlight Module": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Air Cleaner": {
+      "low": 77.0,
+      "average": 85.0,
+      "high": 95.0,
+      "reasoning": "Filtered out parts not matching the 2.4L engine, parts for other models, and items under $40. Also removed listings that appeared to be only for the filter itself or other small components, and listings for the 3.6L engine.",
+      "items_analyzed": 134,
+      "items_filtered_out": 78,
+      "cleaned_count": 56,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good amount of data available and most listings were appropriate after filtering."
+    },
+    "Air Filter Housing": {
+      "low": 90.0,
+      "average": 95.0,
+      "high": 100.0,
+      "reasoning": "No items were filtered out as all listings appear to be for the correct part (air filter housing) for a Buick LaCrosse, though the engine size is different than the specified 2.4L. Given the small sample size, I will proceed with the analysis.",
+      "items_analyzed": 5,
+      "items_filtered_out": 0,
+      "cleaned_count": 5,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Small sample size and incorrect engine size listed in the titles reduces confidence."
+    },
+    "Air Hose": {
+      "low": 88.0,
+      "average": 88.0,
+      "high": 88.0,
+      "reasoning": "Only one item found. It appears to be the correct part based on the title.",
+      "items_analyzed": 1,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Very small sample size."
+    },
+    "Air Injection Pump": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    },
+    "Air Resonator": {
+      "low": 60.0,
+      "average": 60.0,
+      "high": 60.0,
+      "reasoning": "Only one item found. No filtering needed.",
+      "items_analyzed": 1,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "orange",
+      "confidence_explanation": "Very small sample size."
+    },
+    "Air Tube": {
+      "low": 28.0,
+      "average": 90.0,
+      "high": 99.0,
+      "reasoning": "No items were filtered out as all listings appear to be for the correct vehicle (2013 Buick LaCrosse with 2.4L engine) and part type (air intake duct/outlet). No items were below $20.",
+      "items_analyzed": 3,
+      "items_filtered_out": 0,
+      "cleaned_count": 3,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Small sample size, but all items appear relevant and correctly categorized."
+    },
+    "Alternator": {
+      "low": 55.0,
+      "average": 58.0,
+      "high": 65.0,
+      "reasoning": "Filtered out items under $30 and listings not explicitly for alternators. Included listings for LaCrosse, Impala, Equinox, Terrain, and SRX as they share platforms. Focused on used OEM parts.",
+      "items_analyzed": 192,
+      "items_filtered_out": 4,
+      "cleaned_count": 188,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Good data quality with a reasonable sample size after filtering. Most listings appear to be appropriate used OEM alternators."
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 725.0,
+      "average": 888.0,
+      "high": 964.0
+    },
+    "bids": {
+      "low": 300,
+      "average": 300,
+      "high": 300
+    }
+  },
+  "status": "❌ 4 Failed",
+  "failed_parts": [
+    "3rd Brake Light",
+    "Adaptive Cruise Control",
+    "Adaptive Headlight Module",
+    "Air Injection Pump"
+  ],
+  "low_confidence_parts": [
+    "Air Filter Housing",
+    "Air Hose",
+    "Air Resonator"
+  ],
+  "filename": "2013_BUICK_LaCrosse_20250728_231434.json"
+}

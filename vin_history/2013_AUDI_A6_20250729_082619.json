@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-29T08:26:19.384740",
+  "vin": "WAUGGAFC0DN038125",
+  "vehicle_info": {
+    "make": "AUDI",
+    "model": "A6",
+    "year": "2013",
+    "trim": "quattro Premium Plus",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "transmission_style": "Automatic",
+    "drive_type": "AWD/All-Wheel Drive",
+    "engine_cylinders": "6",
+    "engine_displacement": "3.0",
+    "fuel_type": "Gasoline",
+    "engine_designation": "C"
+  },
+  "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 35.79,
+      "average": 71.31,
+      "high": 101.99,
+      "reasoning": "Price analysis summary",
+      "items_analyzed": 20,
+      "items_filtered_out": 0,
+      "cleaned_count": 20,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "Sample size and data quality assessment"
+    },
+    "A/C Compressor": {
+      "low": 85,
+      "average": 100,
+      "high": 110,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "A/C Condenser": {
+      "low": 60.5,
+      "average": 101.28,
+      "high": 122.5,
+      "reasoning": "Prices were analyzed to determine the low, average, and high pricing tiers for A/C Condensers based on the provided dataset of 20 price points.",
+      "items_analyzed": 20,
+      "items_filtered_out": 10,
+      "cleaned_count": 10,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "The sample size of 20 items provides a moderate level of confidence, but additional data could improve the accuracy of the pricing tiers."
+    },
+    "A/C Evaporator": {
+      "low": 25,
+      "average": 60,
+      "high": 80,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 41,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 206.29,
+      "average": 332.59000000000003,
+      "high": 414.49
+    },
+    "bids": {
+      "low": 300,
+      "average": 300,
+      "high": 300
+    }
+  },
+  "status": "✅ Complete",
+  "failed_parts": [],
+  "low_confidence_parts": [],
+  "filename": "2013_AUDI_A6_20250729_082619.json"
+}
