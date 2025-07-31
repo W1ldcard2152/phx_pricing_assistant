@@ -1,9 +1,9 @@
 [
   {
-    "timestamp": "2025-07-29T08:29:16.570776",
+    "timestamp": "2025-07-30T19:52:46.532812",
     "vin": "WAUGGAFC0DN038125",
     "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_082916.json",
+    "filename": "2013_AUDI_A6_20250730_195246.json",
     "status": "✅ Complete",
     "bids": {
       "low": 300,
@@ -11,16 +11,16 @@
       "high": 300
     },
     "totals": {
-      "low": 240.79,
-      "average": 484.06,
-      "high": 777.79
+      "low": 224.0,
+      "average": 332.0,
+      "high": 697.0
     }
   },
   {
-    "timestamp": "2025-07-29T08:26:19.384740",
+    "timestamp": "2025-07-29T20:47:51.470308",
     "vin": "WAUGGAFC0DN038125",
     "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_082619.json",
+    "filename": "2013_AUDI_A6_20250729_204751.json",
     "status": "✅ Complete",
     "bids": {
       "low": 300,
@@ -28,16 +28,16 @@
       "high": 300
     },
     "totals": {
-      "low": 206.29,
-      "average": 332.59000000000003,
-      "high": 414.49
+      "low": 240.0,
+      "average": 345.0,
+      "high": 490.0
     }
   },
   {
-    "timestamp": "2025-07-29T08:24:40.850321",
+    "timestamp": "2025-07-29T20:42:25.305185",
     "vin": "WAUGGAFC0DN038125",
     "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_082440.json",
+    "filename": "2013_AUDI_A6_20250729_204225.json",
     "status": "✅ Complete",
     "bids": {
       "low": 300,
@@ -45,264 +45,94 @@
       "high": 300
     },
     "totals": {
-      "low": 245,
-      "average": 325,
-      "high": 390
+      "low": 191.0,
+      "average": 311.0,
+      "high": 527.0
     }
   },
   {
-    "timestamp": "2025-07-29T08:03:58.173267",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_080358.json",
-    "status": "✅ Complete",
-    "bids": {
-      "low": 300,
-      "average": 300,
-      "high": 300
-    },
-    "totals": {
-      "low": 245,
-      "average": 325,
-      "high": 390
-    }
-  },
-  {
-    "timestamp": "2025-07-29T08:02:00.806504",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_080200.json",
-    "status": "✅ Complete",
-    "bids": {
-      "low": 300,
-      "average": 300,
-      "high": 300
-    },
-    "totals": {
-      "low": 245,
-      "average": 325,
-      "high": 390
-    }
-  },
-  {
-    "timestamp": "2025-07-29T08:00:29.723196",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_080029.json",
-    "status": "✅ Complete",
-    "bids": {
-      "low": 300,
-      "average": 300,
-      "high": 300
-    },
-    "totals": {
-      "low": 245,
-      "average": 325,
-      "high": 390
-    }
-  },
-  {
-    "timestamp": "2025-07-29T07:58:44.077959",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_075844.json",
-    "status": "✅ Complete",
-    "bids": {
-      "low": 300,
-      "average": 300,
-      "high": 300
-    },
-    "totals": {
-      "low": 100.0,
-      "average": 140.0,
-      "high": 180.0
-    }
-  },
-  {
-    "timestamp": "2025-07-29T07:52:13.881955",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_075213.json",
-    "status": "✅ Complete",
-    "bids": {
-      "low": 300,
-      "average": 300,
-      "high": 300
-    },
-    "totals": {
-      "low": 245,
-      "average": 325,
-      "high": 390
-    }
-  },
-  {
-    "timestamp": "2025-07-29T07:50:17.330588",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_075017.json",
-    "status": "✅ Complete",
-    "bids": {
-      "low": 300,
-      "average": 300,
-      "high": 300
-    },
-    "totals": {
-      "low": 1380.99,
-      "average": 1614.99,
-      "high": 1884.99
-    }
-  },
-  {
-    "timestamp": "2025-07-29T07:45:43.289352",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_074543.json",
-    "status": "✅ Complete",
-    "bids": {
-      "low": 300,
-      "average": 300,
-      "high": 300
-    },
-    "totals": {
-      "low": 1380.99,
-      "average": 1614.99,
-      "high": 1884.99
-    }
-  },
-  {
-    "timestamp": "2025-07-29T07:32:43.715236",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_073243.json",
-    "status": "✅ Complete",
-    "bids": {
-      "low": 300,
-      "average": 300,
-      "high": 300
-    },
-    "totals": {
-      "low": 1380.99,
-      "average": 1614.99,
-      "high": 1884.99
-    }
-  },
-  {
-    "timestamp": "2025-07-29T00:08:38.277570",
-    "vin": "WAUGGAFC0DN038125",
-    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
-    "filename": "2013_AUDI_A6_20250729_000838.json",
-    "status": "❌ 28 Failed",
-    "bids": {
-      "low": 10577.75697049329,
-      "average": 15619.210632364944,
-      "high": 21098.438142935564
-    },
-    "totals": {
-      "low": 18616.449999999997,
-      "average": 24135.47,
-      "high": 29580.470000000005
-    }
-  },
-  {
-    "timestamp": "2025-07-28T23:56:09.021834",
+    "timestamp": "2025-07-29T20:40:25.371967",
     "vin": "1G4GC5ER9DF256470",
     "vehicle_string": "2013 BUICK LaCrosse Leather",
-    "filename": "2013_BUICK_LaCrosse_20250728_235609.json",
-    "status": "❌ 62 Failed",
-    "bids": {
-      "low": 6763.363234206232,
-      "average": 8913.143091839302,
-      "high": 11067.126447302551
-    },
-    "totals": {
-      "low": 13928.474999999999,
-      "average": 16640.434999999998,
-      "high": 19180.435
-    }
-  },
-  {
-    "timestamp": "2025-07-28T23:48:21.814746",
-    "vin": "1G4GC5ER9DF256470",
-    "vehicle_string": "2013 BUICK LaCrosse Leather",
-    "filename": "2013_BUICK_LaCrosse_20250728_234821.json",
-    "status": "❌ 4 Failed",
+    "filename": "2013_BUICK_LaCrosse_20250729_204025.json",
+    "status": "✅ Complete",
     "bids": {
       "low": 300,
       "average": 300,
       "high": 300
     },
     "totals": {
-      "low": 725.0,
-      "average": 894.0,
-      "high": 971.0
+      "low": 243.99,
+      "average": 283.99,
+      "high": 325.99
     }
   },
   {
-    "timestamp": "2025-07-28T23:34:28.354895",
-    "vin": "1G4GC5ER9DF256470",
-    "vehicle_string": "2013 BUICK LaCrosse Leather",
-    "filename": "2013_BUICK_LaCrosse_20250728_233428.json",
-    "status": "❌ 4 Failed",
+    "timestamp": "2025-07-29T20:04:22.672439",
+    "vin": "WAUGGAFC0DN038125",
+    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+    "filename": "2013_AUDI_A6_20250729_200422.json",
+    "status": "✅ Complete",
     "bids": {
       "low": 300,
       "average": 300,
       "high": 300
     },
     "totals": {
-      "low": 720.0,
-      "average": 888.0,
-      "high": 966.0
+      "low": 202.0,
+      "average": 381.0,
+      "high": 526.0
     }
   },
   {
-    "timestamp": "2025-07-28T23:32:41.788781",
-    "vin": "1G4GC5ER9DF256470",
-    "vehicle_string": "2013 BUICK LaCrosse Leather",
-    "filename": "2013_BUICK_LaCrosse_20250728_233241.json",
-    "status": "❌ 4 Failed",
+    "timestamp": "2025-07-29T19:50:32.017184",
+    "vin": "WAUGGAFC0DN038125",
+    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+    "filename": "2013_AUDI_A6_20250729_195032.json",
+    "status": "✅ Complete",
     "bids": {
       "low": 300,
       "average": 300,
       "high": 300
     },
     "totals": {
-      "low": 722.0,
-      "average": 888.0,
-      "high": 966.0
+      "low": 202.0,
+      "average": 381.0,
+      "high": 531.0
     }
   },
   {
-    "timestamp": "2025-07-28T23:18:01.844394",
-    "vin": "1G4GC5ER9DF256470",
-    "vehicle_string": "2013 BUICK LaCrosse Leather",
-    "filename": "2013_BUICK_LaCrosse_20250728_231801.json",
-    "status": "❌ 4 Failed",
+    "timestamp": "2025-07-29T19:33:59.094990",
+    "vin": "WAUGGAFC0DN038125",
+    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+    "filename": "2013_AUDI_A6_20250729_193359.json",
+    "status": "✅ Complete",
     "bids": {
       "low": 300,
       "average": 300,
       "high": 300
     },
     "totals": {
-      "low": 722.0,
-      "average": 893.0,
-      "high": 971.0
+      "low": 182.68,
+      "average": 446.0,
+      "high": 846.78
     }
   },
   {
-    "timestamp": "2025-07-28T23:14:34.467127",
-    "vin": "1G4GC5ER9DF256470",
-    "vehicle_string": "2013 BUICK LaCrosse Leather",
-    "filename": "2013_BUICK_LaCrosse_20250728_231434.json",
-    "status": "❌ 4 Failed",
+    "timestamp": "2025-07-29T19:14:16.846566",
+    "vin": "WAUGGAFC0DN038125",
+    "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+    "filename": "2013_AUDI_A6_20250729_191416.json",
+    "status": "✅ Complete",
     "bids": {
       "low": 300,
       "average": 300,
       "high": 300
     },
     "totals": {
-      "low": 725.0,
-      "average": 888.0,
-      "high": 964.0
+      "low": 182.68,
+      "average": 471.0,
+      "high": 846.78
     }
   }
 ]

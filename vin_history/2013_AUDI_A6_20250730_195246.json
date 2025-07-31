@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-30T19:52:46.532812",
+  "vin": "WAUGGAFC0DN038125",
+  "vehicle_info": {
+    "make": "AUDI",
+    "model": "A6",
+    "year": "2013",
+    "trim": "quattro Premium Plus",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "transmission_style": "Automatic",
+    "drive_type": "AWD/All-Wheel Drive",
+    "engine_cylinders": "6",
+    "engine_displacement": "3.0",
+    "fuel_type": "Gasoline",
+    "engine_designation": "C"
+  },
+  "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 45,
+      "average": 65,
+      "high": 80,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 24,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "A/C Compressor": {
+      "low": 75.0,
+      "average": 108.0,
+      "high": 143.0,
+      "reasoning": "Filtered out listings with incorrect categories (e.g., accessories, unrelated parts), non-relevant vehicle specifics (diesel, RWD/FWD), or under $30. Only mechanical A/C compressors for 2.0L/3.0L AWD gas engine A6 models (2012-2016) remain. Exclusions included non-A6/A7 models, parts with mismatched engine sizes, or entries that do not match the vehicle specifications and drivetrain.",
+      "items_analyzed": 80,
+      "items_filtered_out": 54,
+      "cleaned_count": 26,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The dataset contains a substantial number of appropriate, vehicle-specific A/C compressor listings for the specified model and engine, although some entries with minor outliers or potential variation in condition were present, but overall data quality is sufficient for a reliable price range estimate."
+    },
+    "A/C Condenser": {
+      "low": 80.0,
+      "average": 115.0,
+      "high": 229.0,
+      "reasoning": "Filtering removed listings with incompatible engines, drivetrain setups, accessories, aftermarket, or damaged/incorrect parts. Remaining data primarily consist of OEM-spec compatible A/C condensers for 2012-2018 Audi A6 and A7 Quattro models with 3.0L engines, matching vehicle specifications and drivetrain. The percentile calculations are based only on these appropriate listings.",
+      "items_analyzed": 40,
+      "items_filtered_out": 18,
+      "cleaned_count": 22,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The dataset is sufficiently focused on the compatible market segment, with consistent OEM references and proper specifications. Filtering ensures relevance, leading to a reliable price range estimation despite some variability in exact model years and conditions."
+    },
+    "A/C Evaporator": {
+      "low": 24.0,
+      "average": 44.0,
+      "high": 245.0,
+      "reasoning": "Filtered out accessories, small parts, filters, and non-vehicle-specific items. Retained only high-quality, relevant 2012-2017 Audi A6 C7 3.0L gas A/C evaporator parts and related OEM core assemblies, excluding outliers like damaged cores and incompatible models. Applied vehicle-specific filters based on drivetrain and engine phase, resulting in a cleaner subset for price analysis.",
+      "items_analyzed": 27,
+      "items_filtered_out": 8,
+      "cleaned_count": 19,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Data primarily consists of OEM or OEM-equivalent evaporator parts suited for the 3.0L gas engine, AWD models, and proper model years, providing a solid basis for price benchmarking. Minor variation exists due to included core assemblies and different seller types, but overall data quality is acceptable for this segment."
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 224.0,
+      "average": 332.0,
+      "high": 697.0
+    },
+    "bids": {
+      "low": 300,
+      "average": 300,
+      "high": 300
+    }
+  },
+  "status": "✅ Complete",
+  "failed_parts": [],
+  "low_confidence_parts": [],
+  "filename": "2013_AUDI_A6_20250730_195246.json"
+}

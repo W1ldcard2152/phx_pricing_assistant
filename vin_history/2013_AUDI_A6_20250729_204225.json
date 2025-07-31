@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-29T20:42:25.305185",
+  "vin": "WAUGGAFC0DN038125",
+  "vehicle_info": {
+    "make": "AUDI",
+    "model": "A6",
+    "year": "2013",
+    "trim": "quattro Premium Plus",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "transmission_style": "Automatic",
+    "drive_type": "AWD/All-Wheel Drive",
+    "engine_cylinders": "6",
+    "engine_displacement": "3.0",
+    "fuel_type": "Gasoline",
+    "engine_designation": "C"
+  },
+  "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 36.0,
+      "average": 44.0,
+      "high": 84.0,
+      "reasoning": "Filtered out entries under $20, accessories, aftermarket, or incorrect vehicle specifications. Remaining listings are appropriate for Audi A6 C7 sedans, 3rd brake lights, with relevant OEM or aftermarket quality, and pre-filtered for drivetrain and engine specifications.",
+      "items_analyzed": 18,
+      "items_filtered_out": 4,
+      "cleaned_count": 14,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Data consists of 18 relevant listings for the specified vehicle and part, with consistent specifications. Minor variation in prices due to OEM vs aftermarket branding; overall, the dataset provides a solid basis for price estimation of this part."
+    },
+    "A/C Compressor": {
+      "low": 45.0,
+      "average": 92.0,
+      "high": 134.0,
+      "reasoning": "Filtered out items outside the relevant vehicle context (non-3.0L AWD gas engine), accessories, new/aftermarket, obviously overpriced, or under $30. Focused on OEM or used AC compressors compatible with 2012-2015 Audi A6 3.0L AWD gas models. Percentiles calculated directly from the filtered dataset, with the minimum set at $45 to reflect actual market lower boundary.",
+      "items_analyzed": 130,
+      "items_filtered_out": 25,
+      "cleaned_count": 105,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The dataset predominantly contains relevant used OEM or compatible A/C compressors for 2012-2015 Audi A6 3.0L AWD, with prices reflecting a consistent market range, making this a reasonably accurate market estimate."
+    },
+    "A/C Condenser": {
+      "low": 85.0,
+      "average": 115.0,
+      "high": 229.0,
+      "reasoning": "Filtered out items under $40, accessories, aftermarket, and erroneous listings. Selected high-quality, vehicle-appropriate A/C condensers for AWD 3.0L Audi A6/A7 from 2012-2018, excluding outliers and wrong specifications.",
+      "items_analyzed": 44,
+      "items_filtered_out": 4,
+      "cleaned_count": 40,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Data set includes predominantly relevant, vehicle-specific condenser listings, with consistent pricing for OEM or equivalent parts. Minor outlier at the high end (overpriced or damaged units) does not significantly affect the overall pattern."
+    },
+    "A/C Evaporator": {
+      "low": 25,
+      "average": 60,
+      "high": 80,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 41,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 191.0,
+      "average": 311.0,
+      "high": 527.0
+    },
+    "bids": {
+      "low": 300,
+      "average": 300,
+      "high": 300
+    }
+  },
+  "status": "✅ Complete",
+  "failed_parts": [],
+  "low_confidence_parts": [],
+  "filename": "2013_AUDI_A6_20250729_204225.json"
+}

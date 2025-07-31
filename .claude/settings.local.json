@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(python test_gpt41_nano.py:*)",
+      "Bash(python test_pricing_fix.py:*)"
     ],
     "deny": []
   }

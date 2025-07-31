@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-29T20:47:51.470308",
+  "vin": "WAUGGAFC0DN038125",
+  "vehicle_info": {
+    "make": "AUDI",
+    "model": "A6",
+    "year": "2013",
+    "trim": "quattro Premium Plus",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "transmission_style": "Automatic",
+    "drive_type": "AWD/All-Wheel Drive",
+    "engine_cylinders": "6",
+    "engine_displacement": "3.0",
+    "fuel_type": "Gasoline",
+    "engine_designation": "C"
+  },
+  "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 45,
+      "average": 65,
+      "high": 80,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 24,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "A/C Compressor": {
+      "low": 85.0,
+      "average": 111.0,
+      "high": 137.0,
+      "reasoning": "Filtered out items under $30, accessories, wrong categories, and non-vehicle-specific parts. Retained high-quality, vehicle-relevant A/C compressors for 2013 Audi A6 with matching engine and drivetrain specifications, focusing on OEM and documented mileage listings.",
+      "items_analyzed": 147,
+      "items_filtered_out": 61,
+      "cleaned_count": 86,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Data consists predominantly of appropriately categorized, vehicle-specific OEM or OEM-equivalent A/C compressors with relevant model years and engine info, providing a reliable market price estimate for the specified vehicle."
+    },
+    "A/C Condenser": {
+      "low": 85.0,
+      "average": 109.0,
+      "high": 193.0,
+      "reasoning": "Filtered out listings under $40, non-relevant parts (e.g., headlight ballasts), and items not matching vehicle specifications (FWD, RWD, diesel). Considered only appropriate A/C condensers, excluding aftermarket, damaged, or ambiguous entries. The remaining data reflects a consistent market price range for OEM A/C condensers suited to the 2013 Audi A6 Quattro 3.0L with AWD based on model years 2012-2018.",
+      "items_analyzed": 41,
+      "items_filtered_out": 3,
+      "cleaned_count": 38,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Data is generally appropriate for OEM A/C condensers for the specified vehicle but includes some variation in listing quality. The sample size is moderate, providing a reliable range, with most listings correctly fitting the vehicle's specifications and drivetrain."
+    },
+    "A/C Evaporator": {
+      "low": 25,
+      "average": 60,
+      "high": 80,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 41,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 240.0,
+      "average": 345.0,
+      "high": 490.0
+    },
+    "bids": {
+      "low": 300,
+      "average": 300,
+      "high": 300
+    }
+  },
+  "status": "✅ Complete",
+  "failed_parts": [],
+  "low_confidence_parts": [],
+  "filename": "2013_AUDI_A6_20250729_204751.json"
+}

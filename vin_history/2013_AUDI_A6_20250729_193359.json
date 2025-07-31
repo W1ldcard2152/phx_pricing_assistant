@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-29T19:33:59.094990",
+  "vin": "WAUGGAFC0DN038125",
+  "vehicle_info": {
+    "make": "AUDI",
+    "model": "A6",
+    "year": "2013",
+    "trim": "quattro Premium Plus",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "transmission_style": "Automatic",
+    "drive_type": "AWD/All-Wheel Drive",
+    "engine_cylinders": "6",
+    "engine_displacement": "3.0",
+    "fuel_type": "Gasoline",
+    "engine_designation": "C"
+  },
+  "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 35.79,
+      "average": 87.0,
+      "high": 147.79,
+      "reasoning": "All listings analyzed were compatible OEM parts in working condition. The low price reflects the most affordable working part, while the high price represents the premium end of the spectrum for low mileage or excellent condition parts. The average price is calculated based on the valid listings that were retained.",
+      "items_analyzed": 25,
+      "items_filtered_out": 0,
+      "cleaned_count": 25,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The data set contains a sufficient number of relevant listings (25), with consistent pricing trends observed among the used OEM parts."
+    },
+    "A/C Compressor": {
+      "low": 45.0,
+      "average": 106.0,
+      "high": 145.0,
+      "reasoning": "Filtered out new parts, aftermarket parts, accessories, incompatible engine applications, and damaged items. Focused on used OEM parts in working condition that are compatible with the specified vehicle models. The pricing tiers were established based on the quality and condition of the parts, with the budget tier representing lower-end working parts, the standard tier representing mid-range pricing for typical used parts in good condition, and the premium tier representing higher-quality used parts with low mileage and excellent condition.",
+      "items_analyzed": 200,
+      "items_filtered_out": 150,
+      "cleaned_count": 50,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The analysis is based on a good number of relevant items (50+), with consistent pricing trends observed among the filtered listings."
+    },
+    "A/C Condenser": {
+      "low": 60.5,
+      "average": 115.0,
+      "high": 229.0,
+      "reasoning": "Filtered out new parts, aftermarket parts, and listings with incompatible engine sizes or those marked as damaged. Focused on used OEM parts in working condition that are compatible with the specified Audi models. The pricing tiers were established based on the condition and quality of the parts, with the low end representing budget options and the high end representing premium parts.",
+      "items_analyzed": 20,
+      "items_filtered_out": 19,
+      "cleaned_count": 1,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The analysis included a sufficient number of relevant listings (20), with consistent pricing trends observed among the used OEM parts that met the compatibility criteria."
+    },
+    "A/C Evaporator": {
+      "low": 41.39,
+      "average": 138.0,
+      "high": 324.99,
+      "reasoning": "Filtered out new parts, aftermarket parts, accessories, and any listings that specified different engine sizes or were marked as damaged or for parts only. The remaining listings were focused on used OEM A/C evaporators that are compatible with the specified vehicle applications. The low price reflects the lowest working part, while the high price reflects the highest quality part. The average price is calculated based on the remaining valid listings.",
+      "items_analyzed": 10,
+      "items_filtered_out": 31,
+      "cleaned_count": -21,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "The analysis is based on a moderate number of relevant items (10), but there is some variability in pricing and condition among the remaining listings."
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 182.68,
+      "average": 446.0,
+      "high": 846.78
+    },
+    "bids": {
+      "low": 300,
+      "average": 300,
+      "high": 300
+    }
+  },
+  "status": "✅ Complete",
+  "failed_parts": [],
+  "low_confidence_parts": [],
+  "filename": "2013_AUDI_A6_20250729_193359.json"
+}

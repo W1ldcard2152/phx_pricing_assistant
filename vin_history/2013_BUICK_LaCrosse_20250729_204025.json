@@ -1,0 +1,81 @@
+{
+  "timestamp": "2025-07-29T20:40:25.371967",
+  "vin": "1G4GC5ER9DF256470",
+  "vehicle_info": {
+    "make": "BUICK",
+    "model": "LaCrosse",
+    "year": "2013",
+    "trim": "Leather",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "drive_type": "FWD/Front-Wheel Drive",
+    "engine_cylinders": "4",
+    "engine_displacement": "2.4",
+    "fuel_type": "Gasoline",
+    "engine_designation": "R"
+  },
+  "vehicle_string": "2013 BUICK LaCrosse Leather",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 65.99,
+      "average": 65.99,
+      "high": 65.99,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 1,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "A/C Compressor": {
+      "low": 70,
+      "average": 80,
+      "high": 85,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "A/C Condenser": {
+      "low": 80,
+      "average": 100,
+      "high": 120,
+      "reasoning": "",
+      "items_analyzed": 0,
+      "items_filtered_out": 0,
+      "cleaned_count": 200,
+      "confidence_rating": "yellow",
+      "confidence_explanation": "No confidence data available"
+    },
+    "A/C Evaporator": {
+      "low": 28.0,
+      "average": 38.0,
+      "high": 55.0,
+      "reasoning": "Filtered out items not matching the vehicle specs or category, including small parts, incorrect vehicle models, non-mechanical components, and items priced below $20. The remaining data set is predominantly OEM or compatible parts for 2011-2017 Buick LaCrosse and similar models, with prices clustered around $30-$55, indicating the market range for the AC evaporator for this vehicle.",
+      "items_analyzed": 67,
+      "items_filtered_out": 28,
+      "cleaned_count": 39,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "Data consists mainly of appropriate, vehicle-specific parts with consistent pricing; some outliers exist but overall sample represents the current market for the specified part."
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 243.99,
+      "average": 283.99,
+      "high": 325.99
+    },
+    "bids": {
+      "low": 300,
+      "average": 300,
+      "high": 300
+    }
+  },
+  "status": "✅ Complete",
+  "failed_parts": [],
+  "low_confidence_parts": [],
+  "filename": "2013_BUICK_LaCrosse_20250729_204025.json"
+}

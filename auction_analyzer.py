@@ -11,15 +11,14 @@ import datetime
 from typing import Dict, List, Optional
 from dotenv import load_dotenv
 import google.generativeai as genai
-from openai import OpenAI
 
 # Load environment variables
 load_dotenv()
 
-class PhoenixPricingAssistant:
+class PhoenixAuctionAssistant:
     def __init__(self, root):
         self.root = root
-        self.root.title("Phoenix Pricing Assistant")
+        self.root.title("Phoenix Auction Assistant")
         self.root.geometry("1000x700")
         self.root.minsize(1000, 700)  # Prevent window from getting too small
         self.root.resizable(True, True)  # Allow resizing but maintain minimum
@@ -31,46 +30,22 @@ class PhoenixPricingAssistant:
         self.ebay_access_token = None
         self.ebay_token_expiry = None  # Track token expiration
         
-        # Load AI API credentials and configure
-        self.openai_api_key = os.getenv('OPENAI_API_KEY')
+        # Load Gemini API credentials and configure
+        self.gemini_api_key = os.getenv('GEMINI_API_KEY')
         self.use_ai_analysis = os.getenv('USE_AI_ANALYSIS', 'true').lower() == 'true'
         
-        if self.openai_api_key and self.use_ai_analysis:
+        if self.gemini_api_key and self.use_ai_analysis:
             try:
-                self.openai_client = OpenAI(api_key=self.openai_api_key)
-                self.ai_model_available = True
+                genai.configure(api_key=self.gemini_api_key)
+                self.gemini_model = genai.GenerativeModel('gemini-2.0-flash-exp')
             except Exception as e:
-                print(f"Failed to initialize OpenAI client: {e}")
-                self.ai_model_available = False
+                print(f"Failed to initialize Gemini model: {e}")
+                self.gemini_model = None
         else:
-            self.ai_model_available = False
+            self.gemini_model = None
         
         self.setup_gui()
         self.load_parts_list()
-    
-    def load_parts_list(self):
-        """Load parts list from category_mapping.csv"""
-        print("DEBUG: load_parts_list() called")
-        self.parts_list = []
-        try:
-            with open('category_mapping.csv', 'r', encoding='utf-8') as f:
-                reader = csv.DictReader(f)
-                for row in reader:
-                    part_data = {
-                        'search_query': row['search_query'],
-                        'category_id': row['category_id'],
-                        'min_price': float(row['min_price'])
-                    }
-                    self.parts_list.append(part_data)
-            print(f"DEBUG: Successfully loaded {len(self.parts_list)} parts from category_mapping.csv")
-            if hasattr(self, 'results_text') and self.results_text:
-                self.results_text.insert(tk.END, f"Loaded {len(self.parts_list)} parts from category_mapping.csv\n")
-        except FileNotFoundError:
-            self.parts_list = []
-            print("ERROR: category_mapping.csv not found. Parts list will be empty.")
-        except Exception as e:
-            self.parts_list = []
-            print(f"ERROR: Error loading parts list: {str(e)}")
     
     def setup_gui(self):
         # Configure root window for proper resizing
@@ -88,7 +63,7 @@ class PhoenixPricingAssistant:
         self.vin_entry = ttk.Entry(control_frame, width=30)
         self.vin_entry.grid(row=0, column=1, padx=5, pady=5)
         
-        self.calculate_btn = ttk.Button(control_frame, text="Calculate Part Prices", 
+        self.calculate_btn = ttk.Button(control_frame, text="Calculate Bid", 
                                        command=self.calculate_bid)
         self.calculate_btn.grid(row=0, column=2, padx=5, pady=5)
         
@@ -101,9 +76,9 @@ class PhoenixPricingAssistant:
         main_frame.grid_columnconfigure(0, weight=1)
         control_frame.grid_columnconfigure(1, weight=1)
         
-        # Tab 1: Final Output (Parts Price Analysis)
+        # Tab 1: Final Output (Auction Bid Analysis)
         self.final_output_frame = ttk.Frame(self.notebook)
-        self.notebook.add(self.final_output_frame, text="Price Analysis")
+        self.notebook.add(self.final_output_frame, text="Final Output")
         
         self.final_output_text = tk.Text(self.final_output_frame, height=25, width=70, wrap=tk.WORD)
         self.final_output_text.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
@@ -189,11 +164,11 @@ class PhoenixPricingAssistant:
                                font=('Arial', 12, 'bold'))
         title_label.grid(row=0, column=0, columnspan=3, pady=(0, 10), sticky=tk.W)
         
-        info_label = ttk.Label(main_frame, text="Shows the most recent 50 VIN scans with parts pricing analysis results. Double-click to view details.")
+        info_label = ttk.Label(main_frame, text="Shows the most recent 50 VIN scans with bid analysis results. Double-click to view details.")
         info_label.grid(row=1, column=0, columnspan=3, pady=(0, 15), sticky=tk.W)
         
         # Create treeview for history table
-        columns = ('Date/Time', 'VIN', 'Vehicle', 'Parts Total', 'Budget Price', 'Standard Price', 'Premium Price', 'Status')
+        columns = ('Date/Time', 'VIN', 'Vehicle', 'Parts Total', 'Budget Bid', 'Standard Bid', 'Premium Bid', 'Status')
         self.vin_history_tree = ttk.Treeview(main_frame, columns=columns, show='headings', height=20)
         
         # Define column headings and widths
@@ -201,18 +176,18 @@ class PhoenixPricingAssistant:
         self.vin_history_tree.heading('VIN', text='VIN')
         self.vin_history_tree.heading('Vehicle', text='Vehicle')
         self.vin_history_tree.heading('Parts Total', text='Parts Total')
-        self.vin_history_tree.heading('Budget Price', text='Budget Price')
-        self.vin_history_tree.heading('Standard Price', text='Standard Price')
-        self.vin_history_tree.heading('Premium Price', text='Premium Price')
+        self.vin_history_tree.heading('Budget Bid', text='Budget Bid')
+        self.vin_history_tree.heading('Standard Bid', text='Standard Bid')
+        self.vin_history_tree.heading('Premium Bid', text='Premium Bid')
         self.vin_history_tree.heading('Status', text='Status')
         
         self.vin_history_tree.column('Date/Time', width=120, anchor='w')
         self.vin_history_tree.column('VIN', width=100, anchor='w')
-        self.vin_history_tree.column('Vehicle', width=220, anchor='w')
+        self.vin_history_tree.column('Vehicle', width=180, anchor='w')
         self.vin_history_tree.column('Parts Total', width=80, anchor='e')
-        self.vin_history_tree.column('Budget Price', width=80, anchor='e')
-        self.vin_history_tree.column('Standard Price', width=80, anchor='e')
-        self.vin_history_tree.column('Premium Price', width=80, anchor='e')
+        self.vin_history_tree.column('Budget Bid', width=80, anchor='e')
+        self.vin_history_tree.column('Standard Bid', width=80, anchor='e')
+        self.vin_history_tree.column('Premium Bid', width=80, anchor='e')
         self.vin_history_tree.column('Status', width=100, anchor='w')
         
         # Add scrollbars
@@ -1134,10 +1109,9 @@ Save multiple instruction sets for different vehicle types or scenarios."""
             
             tree.insert('', 'end', values=(price_str, shipping_str, total_str, title))
     
-    def load_parts_list_backup(self):
-        """Backup method - not used since main load_parts_list method exists"""
+    def load_parts_list(self):
         try:
-            with open('category_mapping.csv', 'r', encoding='utf-8') as file:
+            with open('parts_list.csv', 'r') as file:
                 reader = csv.DictReader(file)
                 self.parts_list = []
                 for row in reader:
@@ -1149,9 +1123,9 @@ Save multiple instruction sets for different vehicle types or scenarios."""
                         })
         except FileNotFoundError:
             self.parts_list = [
-                {"search_query": "3rd Brake Light", "category_id": "262205"},
-                {"search_query": "A/C Compressor", "category_id": "33543"},
-                {"search_query": "Alternator", "category_id": "177697"}
+                {"search_query": "engine", "category_id": "33615"},
+                {"search_query": "transmission", "category_id": "33616"},
+                {"search_query": "alternator", "category_id": "33555"}
             ]
     
     def decode_vin(self, vin: str) -> Optional[Dict]:
@@ -1354,11 +1328,11 @@ Save multiple instruction sets for different vehicle types or scenarios."""
     
     def _analyze_prices_with_ai(self, raw_items: List[Dict], part_name: str, minimum_price: float = 0) -> Dict[str, float]:
         """Use AI to analyze pricing data instead of traditional statistical methods"""
-        if not self.ai_model_available or not self.use_ai_analysis:
+        if not self.gemini_model or not self.use_ai_analysis:
             if not self.use_ai_analysis:
                 self.results_text.insert(tk.END, f"AI analysis disabled, using traditional analysis for {part_name}\n")
             else:
-                self.results_text.insert(tk.END, f"OpenAI API not configured, falling back to traditional analysis for {part_name}\n")
+                self.results_text.insert(tk.END, f"Gemini API not configured, falling back to traditional analysis for {part_name}\n")
             self.root.update()
             # Fall back to traditional method
             raw_prices = [item.get('total_price', item.get('price', 0)) for item in raw_items]
@@ -1369,112 +1343,44 @@ Save multiple instruction sets for different vehicle types or scenarios."""
             return {"low": 0, "average": 0, "high": 0, "items_analyzed": 0, "items_filtered_out": 0, "reasoning": "No data provided"}
         
         try:
-            # Extract ALL prices and item details for comprehensive analysis
-            prices = []
-            titles = []
-            for item in raw_items:  # Use ALL items, not just 30
-                price = item.get('price', 0)
-                shipping = item.get('shipping', 0)
-                total = price + shipping
-                title = item.get('title', '').strip()
-                
-                if total > minimum_price:  # Pre-filter by minimum price
-                    prices.append(total)
-                    titles.append(title[:100])  # Keep first 100 chars of title
-            
-            # Sort prices with titles
-            price_title_pairs = list(zip(prices, titles))
-            price_title_pairs.sort(key=lambda x: x[0])
-            
-            # Create detailed data for AI analysis
-            data_lines = []
-            for i, (price, title) in enumerate(price_title_pairs):
-                # Clean title for AI analysis
-                clean_title = title.replace('"', '').replace('\n', ' ').replace(',', ';')
-                data_lines.append(f"${price:.2f} - {clean_title}")
-            
-            data_text = "\n".join(data_lines)
-            
-            # Create CSV format for AI analysis  
+            # Format data for AI analysis
             csv_data = self.format_raw_results_for_ai(part_name, raw_items)
-            
-            # Use the proven auction analyzer prompt creation method
+            # We need vehicle_info for context, but it's not passed to this method
+            # For now, we'll extract it from the search results or pass None
             prompt = self.create_ai_analysis_prompt(part_name, csv_data, minimum_price, getattr(self, 'current_vehicle_info', None))
             
             self.results_text.insert(tk.END, f"Analyzing {part_name} with AI ({len(raw_items)} items)...\n")
             self.root.update()
             
-            # OpenAI API call
-            max_retries = 2
+            # OPTIMIZATION 3: Improved Gemini API settings
+            max_retries = 2  # Reduced from 3 to 2
             for attempt in range(max_retries):
                 try:
-                    self.results_text.insert(tk.END, f"Making OpenAI API call (attempt {attempt + 1})...\n")
-                    self.results_text.insert(tk.END, f"Prompt preview: {prompt[:200]}...\n")
-                    
-                    # Debug: Show actual price range being sent to AI
-                    prices_in_csv = []
-                    for line in csv_data.split('\n')[1:]:  # Skip header
-                        if line.strip():
-                            parts = line.split(',')
-                            if len(parts) >= 3:
-                                try:
-                                    total_price = float(parts[2])
-                                    prices_in_csv.append(total_price)
-                                except:
-                                    pass
-                    
-                    if prices_in_csv:
-                        prices_in_csv.sort()
-                        self.results_text.insert(tk.END, f"CSV price range: ${min(prices_in_csv):.2f} - ${max(prices_in_csv):.2f} ({len(prices_in_csv)} items)\n")
-                    
-                    self.root.update()
-                    
-                    self.results_text.insert(tk.END, f"Making gpt-4.1-nano API call...\n")
-                    self.root.update()
-                    
-                    # Use gpt-4.1-nano with improved prompt for better data adherence
-                    response = self.openai_client.responses.create(
-                        model="gpt-4.1-nano-2025-04-14",
-                        input=prompt + f"\n\nIMPORTANT: Follow the two-step process exactly:\n1. FILTER the data first (remove damaged, wrong engine, etc.)\n2. Calculate percentiles from FILTERED data only\n\nDo NOT just return the minimum price ({min(prices_in_csv):.2f}) as your low_price. Calculate the actual 10-20th percentile of the filtered compatible parts."
+                    response = self.gemini_model.generate_content(
+                        prompt,
+                        generation_config=genai.types.GenerationConfig(
+                            temperature=0.1,  # Low temperature for consistent analysis
+                            max_output_tokens=800,  # Reduced from 1000 to 800
+                            candidate_count=1  # Ensure single response
+                        )
                     )
-                    self.results_text.insert(tk.END, f"gpt-4.1-nano API call successful\n")
-                    self.root.update()
                     break
-                    
                 except Exception as api_error:
-                    self.results_text.insert(tk.END, f"OpenAI API call failed: {str(api_error)}\n")
-                    self.root.update()
                     if attempt == max_retries - 1:
                         raise api_error
                     self.results_text.insert(tk.END, f"AI attempt {attempt + 1} failed, retrying...\n")
                     self.root.update()
                     import time
-                    time.sleep(0.5)
+                    time.sleep(0.5)  # Reduced delay from 1s to 0.5s
             
-            # Parse OpenAI response (gpt-4.1-nano uses different response format)
-            response_text = response.output_text.strip()
+            # Parse JSON response
+            response_text = response.text.strip()
             
-            # Check for empty response
-            if not response_text:
-                raise ValueError("Empty response from OpenAI API")
-            
-            # More robust markdown cleanup
-            # Remove any text before JSON starts
-            if '{' in response_text:
-                json_start = response_text.find('{')
-                response_text = response_text[json_start:]
-            
-            # Remove any text after JSON ends
-            if '}' in response_text:
-                json_end = response_text.rfind('}') + 1
-                response_text = response_text[:json_end]
-            
-            # Clean up markdown code blocks
-            response_text = response_text.replace('```json', '').replace('```', '').strip()
-            
-            # Additional validation for empty cleaned response
-            if not response_text:
-                raise ValueError("Response became empty after cleaning markdown formatting")
+            # Clean up the response in case it has markdown formatting
+            if response_text.startswith('```json'):
+                response_text = response_text.replace('```json', '').replace('```', '').strip()
+            elif response_text.startswith('```'):
+                response_text = response_text.replace('```', '').strip()
             
             result = json.loads(response_text)
             
@@ -1511,12 +1417,11 @@ Save multiple instruction sets for different vehicle types or scenarios."""
             }
             
         except json.JSONDecodeError as e:
-            self.results_text.insert(tk.END, f"OpenAI JSON parsing error for {part_name}: {str(e)}\n")
-            self.results_text.insert(tk.END, f"Raw OpenAI response length: {len(response_text)}\n")
-            self.results_text.insert(tk.END, f"Raw OpenAI response: '{response_text[:500]}'\n")
+            self.results_text.insert(tk.END, f"AI JSON parsing error for {part_name}: {str(e)}\n")
+            self.results_text.insert(tk.END, f"Raw AI response: {response.text[:200]}...\n")
             self.root.update()
         except Exception as e:
-            self.results_text.insert(tk.END, f"OpenAI analysis error for {part_name}: {str(e)}\n")
+            self.results_text.insert(tk.END, f"AI analysis error for {part_name}: {str(e)}\n")
             self.root.update()
         
         # Fall back to traditional method on error
@@ -1525,150 +1430,6 @@ Save multiple instruction sets for different vehicle types or scenarios."""
         raw_prices = [item.get('total_price', item.get('price', 0)) for item in raw_items]
         raw_titles = [item.get('title', '') for item in raw_items]
         return self._analyze_price_distribution(raw_prices, part_name, raw_titles, minimum_price)
-    
-    def format_raw_results_for_ai(self, part_name: str, raw_items: List[Dict]) -> str:
-        """Format raw eBay results into CSV format for AI analysis"""
-        if not raw_items:
-            return "Price,Shipping,Total,Title\n"
-        
-        csv_lines = ["Price,Shipping,Total,Title"]
-        
-        for item in raw_items:
-            price = item.get('price', 0)
-            shipping = item.get('shipping', 0)
-            total_price = item.get('total_price', price + shipping)
-            title = item.get('title', '').replace(',', ';').replace('\n', ' ').strip()
-            
-            csv_lines.append(f"{price:.2f},{shipping:.2f},{total_price:.2f},\"{title}\"")
-        
-        return "\n".join(csv_lines)
-    
-    def create_ai_analysis_prompt(self, part_name: str, csv_data: str, min_price: float = 0, vehicle_info: dict = None) -> str:
-        """Create comprehensive prompt for AI analysis of eBay pricing data"""
-        # Get custom user instructions (for now, return empty - can implement later)
-        custom_instructions = ""
-        
-        # Build comprehensive vehicle context
-        vehicle_context = ""
-        if vehicle_info:
-            base_info = f"{vehicle_info.get('year', 'Unknown')} {vehicle_info.get('make', 'Unknown')} {vehicle_info.get('model', 'Unknown')}"
-            vehicle_context = f"\n**VEHICLE CONTEXT:**\nYou are analyzing parts for a {base_info}.\n"
-            
-            # Add detailed specifications for better parts analysis
-            detailed_specs = []
-            if vehicle_info.get('engine_displacement'):
-                try:
-                    displacement = float(vehicle_info['engine_displacement'])
-                    rounded_displacement = round(displacement, 1)
-                    detailed_specs.append(f"Engine: {rounded_displacement}L")
-                except (ValueError, TypeError):
-                    detailed_specs.append(f"Engine: {vehicle_info['engine_displacement']}")
-            if vehicle_info.get('drive_type'):
-                detailed_specs.append(f"Drive Type: {vehicle_info['drive_type']}")
-            if vehicle_info.get('fuel_type'):
-                detailed_specs.append(f"Fuel Type: {vehicle_info['fuel_type']}")
-            
-            if detailed_specs:
-                vehicle_context += f"Vehicle Specifications: {', '.join(detailed_specs)}\n"
-            
-            # Add parts fitment guidance based on vehicle specs
-            fitment_guidance = []
-            if vehicle_info.get('drive_type'):
-                drive_type = vehicle_info['drive_type'].lower()
-                if 'awd' in drive_type or 'all-wheel' in drive_type:
-                    fitment_guidance.append("AWD systems have unique drivetrain components - exclude FWD/RWD specific parts")
-                elif 'fwd' in drive_type or 'front-wheel' in drive_type:
-                    fitment_guidance.append("FWD vehicle - exclude RWD/AWD specific drivetrain parts")
-                elif 'rwd' in drive_type or 'rear-wheel' in drive_type:
-                    fitment_guidance.append("RWD vehicle - exclude FWD/AWD specific drivetrain parts")
-            
-            if vehicle_info.get('fuel_type'):
-                fuel_type = vehicle_info['fuel_type'].lower()
-                if 'diesel' in fuel_type:
-                    fitment_guidance.append("Diesel engine - fuel system parts differ significantly from gasoline")
-                elif 'gasoline' in fuel_type:
-                    fitment_guidance.append("Gasoline engine - exclude diesel-specific fuel system parts")
-            
-            if vehicle_info.get('body_class'):
-                body_class = vehicle_info['body_class'].lower()
-                if 'coupe' in body_class:
-                    fitment_guidance.append("Coupe body - some parts may differ from sedan variants")
-                elif 'sedan' in body_class:
-                    fitment_guidance.append("Sedan body - some parts may differ from coupe/hatchback variants")
-                elif 'suv' in body_class or 'truck' in body_class:
-                    fitment_guidance.append("SUV/Truck body - larger/heavier duty components than car variants")
-            
-            if fitment_guidance:
-                vehicle_context += f"\n**PARTS FITMENT CONSIDERATIONS:**\n"
-                for guidance in fitment_guidance:
-                    vehicle_context += f"• {guidance}\n"
-        
-        # Build custom instructions section
-        custom_section = ""
-        if custom_instructions:
-            custom_section = f"""
-**CUSTOM ANALYSIS INSTRUCTIONS:**
-The user has provided these specific instructions for analyzing this vehicle's parts:
-
-{custom_instructions}
-
-Please incorporate these instructions into your analysis and filtering decisions.
-"""
-        
-        # Use proven auction analyzer prompt structure
-        return f"""Analyze eBay "{part_name}" prices for automotive parts business.{vehicle_context}{custom_section}
-
-**DATA:** CSV with Price,Shipping,Total,Title columns:
-{csv_data}
-
-**CRITICAL: TWO-STEP PROCESS**
-STEP 1: FILTER THE DATA
-- ENGINE-SPECIFIC PARTS (alternators, starters, compressors, fuel injectors): Must match engine displacement exactly
-- DRIVETRAIN-SPECIFIC PARTS (transmission, differential, axles): Must match drivetrain type  
-- UNIVERSAL PARTS (brake lights, condensers, evaporators, mirrors, glass): Compatible across engine sizes for same vehicle model
-- BODY-SPECIFIC PARTS (doors, fenders, bumpers): Must match body style and year range
-
-FILTER OUT:
-1. Items marked "for parts", "needs repair", "core", "damaged", "broken"
-2. New/aftermarket/remanufactured items (look for "new", "aftermarket", "reman" in titles)
-3. Obviously wrong vehicle applications (different make/model entirely)
-4. Wrong engine sizes (if engine-specific part)
-{"5. Items under $" + str(min_price) if min_price > 0 else ""}
-
-STEP 2: CALCULATE PERCENTILES FROM FILTERED DATA ONLY
-After filtering, take the remaining compatible used parts and calculate:
-- low_price = 10-20th percentile of FILTERED data
-- average_price = 25-40th percentile of FILTERED data  
-- high_price = 45-60th percentile of FILTERED data
-
-**EXAMPLE:**
-If you start with 50 items, filter out 30 inappropriate ones, you have 20 good items.
-Sort those 20 items by price, then calculate percentiles from those 20.
-Your low_price should be around the 2nd-4th cheapest of those 20 good items.
-
-**CRITICAL: DO NOT just return the cheapest price as your low_price!**
-The low_price should be the 10-20th percentile, which means approximately 10-20% of the filtered items should be cheaper than your low_price.
-
-**CONFIDENCE RULES:**
-- RED if majority of data is wrong engine size/transmission/drivetrain type
-- ORANGE if poor data quality or small sample
-- YELLOW if mixed quality
-- LIGHT_GREEN if good appropriate data
-- DARK_GREEN if excellent high-quality data
-
-**OUTPUT JSON:**
-{{
-    "low_price": [10-20th percentile of FILTERED compatible parts],
-    "average_price": [25-40th percentile of FILTERED compatible parts], 
-    "high_price": [45-60th percentile of FILTERED compatible parts],
-    "items_analyzed": [count of compatible parts used for percentile calculation],
-    "items_filtered_out": [count of removed incompatible/damaged parts],
-    "reasoning": "[explain filtering decisions and percentile calculation]",
-    "confidence_rating": "[dark_green/light_green/yellow/orange/red]",
-    "confidence_explanation": "[reason for confidence level]"
-}}
-
-Return only valid JSON."""
     
     def _analyze_price_distribution(self, raw_prices: List[float], part_name: str, raw_titles: List[str] = None, minimum_price: float = 0) -> Dict[str, float]:
         """
@@ -2190,7 +1951,7 @@ Please incorporate these instructions into your analysis and filtering decisions
 """
         
         # OPTIMIZATION 4: Streamlined AI prompt for faster processing
-        return f"""You are a professional automotive parts price analyst. Analyze these eBay "{part_name}" listing prices for market research and pricing evaluation.{vehicle_context}{custom_section}
+        return f"""Analyze eBay "{part_name}" prices for junkyard business.{vehicle_context}{custom_section}
 
 **DATA:** CSV with Price,Shipping,Total,Title columns:
 {csv_data}
@@ -2279,7 +2040,7 @@ Return only valid JSON."""
         # Clear and populate the Final Output tab
         self.final_output_text.delete(1.0, tk.END)
         
-        self.final_output_text.insert(tk.END, f"=== PARTS PRICE ANALYSIS ===\n\n")
+        self.final_output_text.insert(tk.END, f"=== AUCTION BID ANALYSIS ===\n\n")
         
         # Display comprehensive vehicle information
         base_vehicle = f"{vehicle_info['year']} {vehicle_info['make']} {vehicle_info['model']}"
@@ -2327,9 +2088,9 @@ Return only valid JSON."""
         self.final_output_text.insert(tk.END, f"\n")
         
         # Display parts breakdown with pricing tiers and confidence
-        self.final_output_text.insert(tk.END, f"{'Part':<30} {'Budget':<10} {'Standard':<10} {'Premium':<10} {'Confidence':<15}\n")
-        self.final_output_text.insert(tk.END, f"{'Name':<30} {'Tier':<10} {'Tier':<10} {'Tier':<10} {'Rating':<15}\n")
-        self.final_output_text.insert(tk.END, "-" * 90 + "\n")
+        self.final_output_text.insert(tk.END, f"{'Part':<20} {'Budget':<10} {'Standard':<10} {'Premium':<10} {'Confidence':<15}\n")
+        self.final_output_text.insert(tk.END, f"{'Tier':<20} {'Tier':<10} {'Tier':<10} {'Tier':<10} {'Rating':<15}\n")
+        self.final_output_text.insert(tk.END, "-" * 80 + "\n")
         
         # Define confidence display mapping
         confidence_display = {
@@ -2347,18 +2108,23 @@ Return only valid JSON."""
                 high = prices.get('high', 0)
                 confidence = prices.get('confidence_rating', 'yellow')
                 confidence_text = confidence_display.get(confidence, '🟡 Unknown')
-                self.final_output_text.insert(tk.END, f"{part.capitalize():<30} ${low:<9.2f} ${avg:<9.2f} ${high:<9.2f} {confidence_text:<15}\n")
+                self.final_output_text.insert(tk.END, f"{part.capitalize():<20} ${low:<9.2f} ${avg:<9.2f} ${high:<9.2f} {confidence_text:<15}\n")
             else:
                 # Fallback for old format
-                self.final_output_text.insert(tk.END, f"{part.capitalize():<30} ${prices:<9.2f} ${prices:<9.2f} ${prices:<9.2f} {'🟡 Legacy':<15}\n")
+                self.final_output_text.insert(tk.END, f"{part.capitalize():<20} ${prices:<9.2f} ${prices:<9.2f} ${prices:<9.2f} {'🟡 Legacy':<15}\n")
         
         # Display totals
         totals = bid_analysis['totals']
         bids = bid_analysis['bids']
         
-        self.final_output_text.insert(tk.END, "-" * 90 + "\n")
-        self.final_output_text.insert(tk.END, f"{'TOTALS:':<30} ${totals['low']:<9.2f} ${totals['average']:<9.2f} ${totals['high']:<9.2f}\n\n")
+        self.final_output_text.insert(tk.END, "-" * 80 + "\n")
+        self.final_output_text.insert(tk.END, f"{'TOTALS:':<20} ${totals['low']:<9.2f} ${totals['average']:<9.2f} ${totals['high']:<9.2f}\n\n")
         
+        # Display recommended bids based on pricing tiers
+        self.final_output_text.insert(tk.END, "RECOMMENDED AUCTION BIDS (Dynamic Formula):\n")
+        self.final_output_text.insert(tk.END, f"Budget-based bid:    ${bids['low']:.2f}  (if you expect lower-grade parts)\n")
+        self.final_output_text.insert(tk.END, f"Standard bid:        ${bids['average']:.2f}  (typical market pricing)\n")
+        self.final_output_text.insert(tk.END, f"Premium bid:         ${bids['high']:.2f}  (if vehicle is in great condition)\n\n")
         
         # Show confidence warnings and explanations
         confidence_warnings = []
@@ -2428,7 +2194,7 @@ Return only valid JSON."""
 
 def main():
     root = tk.Tk()
-    app = PhoenixPricingAssistant(root)
+    app = PhoenixAuctionAssistant(root)
     root.mainloop()
 
 if __name__ == "__main__":

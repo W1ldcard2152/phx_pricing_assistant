@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-29T20:04:22.672439",
+  "vin": "WAUGGAFC0DN038125",
+  "vehicle_info": {
+    "make": "AUDI",
+    "model": "A6",
+    "year": "2013",
+    "trim": "quattro Premium Plus",
+    "vehicle_type": "PASSENGER CAR",
+    "body_class": "Sedan/Saloon",
+    "doors": "4",
+    "transmission_style": "Automatic",
+    "drive_type": "AWD/All-Wheel Drive",
+    "engine_cylinders": "6",
+    "engine_displacement": "3.0",
+    "fuel_type": "Gasoline",
+    "engine_designation": "C"
+  },
+  "vehicle_string": "2013 AUDI A6 quattro Premium Plus",
+  "parts_prices": {
+    "3rd Brake Light": {
+      "low": 35.0,
+      "average": 75.0,
+      "high": 95.0,
+      "reasoning": "Filtered out items under $20, accessories, and those not fitting the vehicle specifications.",
+      "items_analyzed": 20,
+      "items_filtered_out": 5,
+      "cleaned_count": 15,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The majority of the listings are appropriate for the specified vehicle, with a reasonable sample size."
+    },
+    "A/C Compressor": {
+      "low": 63.0,
+      "average": 84.0,
+      "high": 102.0,
+      "reasoning": "Filtered out items that did not fit the vehicle specifications, including incorrect engine sizes, drivetrain types, and accessories. Also excluded items priced under $30.",
+      "items_analyzed": 100,
+      "items_filtered_out": 45,
+      "cleaned_count": 55,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The majority of the data is relevant to the specified vehicle, with a good range of prices and appropriate listings."
+    },
+    "A/C Condenser": {
+      "low": 60.0,
+      "average": 99.0,
+      "high": 130.0,
+      "reasoning": "Filtered out items that were either accessories, new/aftermarket parts, incorrect specifications, obvious outliers, or priced under $40.",
+      "items_analyzed": 36,
+      "items_filtered_out": 12,
+      "cleaned_count": 24,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The majority of the listings were appropriate for the specified vehicle, with a reasonable sample size and quality."
+    },
+    "A/C Evaporator": {
+      "low": 44.0,
+      "average": 123.0,
+      "high": 199.0,
+      "reasoning": "Filtered out items not fitting the 2013 AUDI A6 specifications, including wrong engine sizes, drivetrain types, and accessories. Excluded items under $20.",
+      "items_analyzed": 10,
+      "items_filtered_out": 24,
+      "cleaned_count": -14,
+      "confidence_rating": "light_green",
+      "confidence_explanation": "The remaining data consists of relevant A/C evaporator parts for the specified vehicle, indicating a good quality sample."
+    }
+  },
+  "bid_analysis": {
+    "totals": {
+      "low": 202.0,
+      "average": 381.0,
+      "high": 526.0
+    },
+    "bids": {
+      "low": 300,
+      "average": 300,
+      "high": 300
+    }
+  },
+  "status": "✅ Complete",
+  "failed_parts": [],
+  "low_confidence_parts": [],
+  "filename": "2013_AUDI_A6_20250729_200422.json"
+}
